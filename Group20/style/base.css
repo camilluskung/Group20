@@ -36,20 +36,16 @@ body .container{
 
 /* homepage content */  
 
-.content1 {padding-top: 75px; 
-          padding-right: 60px;
-          padding-left: 60px;}
+.content1 {padding: 30px;}
 
 h1.section {text-align: center;}
 
 p.paragraph {text-align: left;
-            padding-left: 50px;
-            padding-right: 50px;}
+            padding-left: 20px;
+            padding-right: 20px;}
 
-.content2 {padding-top: 20px;
-          padding-right: 60px;
-          padding-left: 60px;
-          padding-bottom: 20px;}
+.column1 {align-content:;}
+
 
 /* hompeage footer */
 
