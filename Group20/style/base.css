@@ -19,14 +19,14 @@ body .container{
 
 .icon-bar {background-color: white;}
 
-.navbar-brand {color: white;}
+.navbar-brand {padding-top: 0px;
+              color: ;}
 
 .nav a {color: white;}
 
-.nav .dropdown-menu li a:hover {background-color: blue;
-                                color: white;}
 .nav li {display: block;
          }
+.navbar-collapse {padding-top:20px;}
 
 .nav li a:hover {background-color: black;}
 
