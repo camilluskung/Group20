@@ -1,0 +1,48 @@
+body {
+	font-family: "Ubuntu";
+}
+.breadcrumb {
+	padding: 0;
+	margin: 20px 0;
+	background-color: white;
+}
+.breadcrumb a {
+	text-decoration: none;
+}
+h1 {
+	font-weight: bold;
+	font-size: 18px;
+}
+.currentpage {
+	font-size: 22px;
+}
+.createthread {
+	border: thin solid black;
+	padding: 20px;
+	margin: 20px 0;
+}
+.createthread label {
+	display: block;
+}
+.createthread input[type=text] {
+	display: block;
+	width: 100%;
+
+	padding: 5px 5px;
+}
+.createthread textarea {
+	padding: 5px 5px;
+	display: block;
+	margin: 15px 0;
+	width: 100%;
+	height: 300px;
+}
+.createthread input[type=submit] {
+	border: none;
+	background-color: #4caf50;
+	color: white;
+	padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+}
