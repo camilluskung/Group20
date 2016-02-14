@@ -24,9 +24,7 @@ body .container{
 
 .nav a {color: white;}
 
-.nav li {display: block;
-         }
-.navbar-collapse {padding-top:20px;}
+.nav li {display: block;}
 
 .nav li a:hover {background-color: black;}
 
@@ -44,39 +42,49 @@ p.paragraph {text-align: left;
             padding-left: 20px;
             padding-right: 20px;}
 
-.column1 {align-content:;}
+.images {text-align: -webkit-center;}
+
 
 /* hompeage footer */
 
+<<<<<<< HEAD
 
 
 #footer {background-color: dimgrey;
         width: 100%;
         height: 150px;}
+=======
+>>>>>>> a5d707d64c2eee5e777ae9d8a428ef56195e3190
 
-#footer .address {color: white;
-                  font-family: sans-serif;
-                  font-size: 10px;
-                  padding-top: 40px;
-                  padding-left: 200px;}
 
-#footer .address_border {padding-left: 25px;  
-                        border-left: groove white;
-                        border-right: groove white;}
+.footerWrapper{padding:0 0 0 0;
+              background-color: #222222;
+              color: #616161;
+              font-family: sans-serif;}
 
-#footer .phone {color: white;
-                font-family: sans-serif;
-                font-size: 10px;
-                padding-top: 40px;
-                padding-left: 10px;}
 
-#footer .disclaimer {padding-top: 20px}
+.footerRights {background-color: #333333;
+              padding-top:15px;
+              padding-bottom:15px;
+              margin-top:5px; 
+              text-align: center; 
+              font-size:10px;}
 
+
+.footerWidget {margin-top: 55px;}
+
+.footerLogo {margin-top: 50px;}
+
+.contact {padding-left: 50px;}
+
+<<<<<<< HEAD
 #footer #copyright {font-size: 8px;
                     color: white;
                     padding-left: 7px;}
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> a5d707d64c2eee5e777ae9d8a428ef56195e3190
 /* about content */
 
 .aboutcolumn1 h1 {text-align: center;}
