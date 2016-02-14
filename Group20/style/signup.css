@@ -16,14 +16,14 @@ display: block
 
 
 /* The content box above the text form */
-.blerb {
+.toptitle {
 	margin-top: 0;
 	padding-top: 0;
 	border-bottom: solid gray;
 	margin-bottom: 20px;
 }
 /* The title of the page "Sign Up"*/
-.blerb h1 {
+.toptitle h1 {
 	color: #92aac3;
     font-weight: 600;
     font-size: 1.90em;
@@ -35,7 +35,7 @@ display: block
 	}
 
 /* Inner heading below title */
-.blerb h2 {
+.toptitle h2 {
 	margin-top: 10px;
 	font-size: 25px;
 	font-weight: bold;
@@ -48,7 +48,7 @@ display: block
 }
 
 /* The written paragraph box aligned to the left */
-.innerblerb {
+.leftcontent {
 	width: 500px;
 	float: left;
 	margin-top: 20px;
