@@ -13,15 +13,22 @@ display: block
 	background: #FF9900;
 	border: thin solid #FF9900;
 }
+
+
 /* The content box above the text form */
 .blerb {
 	margin-top: 0;
 	padding-top: 0;
 	border-bottom: solid gray;
+	margin-bottom: 20px;
 }
 /* The title of the page "Sign Up"*/
 .blerb h1 {
-	font-size: 45px;
+	color: #92aac3;
+    font-weight: 600;
+    font-size: 1.90em;
+	letter-spacing: 4px;
+	text-transform:uppercase;
 	border-bottom: solid gray;
 	padding-bottom: 10px;
 	padding-top: 0;
@@ -34,21 +41,22 @@ display: block
 	font-weight: bold;
 }
 
+.belowbox {
+	border-bottom: solid gray;
+	height: 300px;
+	margin-bottom: 20px;
+}
+
 /* The written paragraph box aligned to the left */
 .innerblerb {
 	width: 500px;
-}
-
-/* The container surrounding the form */
-.formbox {
-	margin-top: 10px;
-	margin-right: auto;
-	margin-left: auto;
+	float: left;
+	margin-top: 20px;
 }
 
 /* The form container */
 .innerformright {
-	margin-top: 30px;
+	margin-top: 20px;
 	width: 600px;
 	float: right;
 	}
