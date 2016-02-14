@@ -1,7 +1,13 @@
+/*
+	default body content
+*/
 body {
 	font-family: "Ubuntu";
 }
 
+/*
+	Bread crumbs
+*/
 .breadcrumb {
 	padding: 0;
 	margin: 20px 0;
@@ -17,6 +23,10 @@ h1 {
 .currentpage {
 	font-size: 22px;
 }
+
+/*
+	Thread body
+*/
 .board {
 	margin: 20px 0;
 	border: thin solid black;
@@ -25,6 +35,9 @@ h1 {
 	height: 50%;
 	font-weight: bold;
 }
+/*
+	reply button
+*/
 .reply {
 	margin: 20px;
 }
@@ -38,8 +51,10 @@ h1 {
 	text-align: center;
 	background-color: yellow;
 }
-.replybody {
-}
+
+/*
+	reply body
+*/
 .replybody textarea {
 	display: block;
 	width: 100%;
@@ -55,6 +70,10 @@ h1 {
     text-decoration: none;
     cursor: pointer;
 }
+
+/*
+	post 
+*/
 .post {
 	margin: 20px;
 	padding: 0;

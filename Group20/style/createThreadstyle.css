@@ -1,6 +1,13 @@
+/*
+	default body content
+*/
 body {
 	font-family: "Ubuntu";
 }
+
+/*
+	Bread crumbs
+*/
 .breadcrumb {
 	padding: 0;
 	margin: 20px 0;
@@ -16,6 +23,10 @@ h1 {
 .currentpage {
 	font-size: 22px;
 }
+
+/*
+	create thread body
+*/
 .createthread {
 	border: thin solid black;
 	padding: 20px;
