@@ -1,0 +1,63 @@
+.body {
+    overflow:hidden;
+}
+
+.board {
+	margin: 20px 0;
+	border: thin solid black;
+	list-style: none;
+	padding-left: 0;
+
+	font-family: "Ubuntu";
+	font-weight: bold;
+}
+.tableHeader {
+	height: 40px;
+	border-bottom: thin solid black;
+}
+.tableHeader p {
+	margin: 5px 10px;
+	font-weight: bold;
+}
+.thread {
+	height: 70px;
+}
+.thread p {
+	margin: 0% 10px;
+	font-weight: bold;
+}
+.topic p {
+	font-size: 20px;
+}
+.thread:nth-child(odd) {
+	padding-top: 10px;
+	background-color: #ffffff;
+	//border-bottom: 10px solid #eef0f0;
+}
+.thread:nth-child(even) {
+	background-color: #eef0f0;
+	padding-top: 10px;
+	//border-bottom: 10px solid #ffffff;
+}
+.thread:last-child {
+	//border-bottom-width: 0;
+}
+.topic {
+	width: 72%;
+	height: 100%;
+	float: left;
+	//border: 10px solid black;
+}
+.view {
+	width: 13%;
+	height: 100%;
+	float: left;
+}
+.date {
+	width: 15%;
+	height: 100%;
+	float: left;
+}
+.topic a {
+	text-decoration: none;
+}
