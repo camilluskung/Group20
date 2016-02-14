@@ -1,5 +1,6 @@
 /* HOMEPAGE- resources */
 
+ /*resource section1*/
 .para1
 {
 	border-bottom: thin solid gray;
@@ -8,6 +9,7 @@
 	margin-right: 100px;
 	padding-bottom: 30px;
 }
+/*paragraph under title heading*/
 .para1_1
 {
 	display: inline-block;
@@ -15,10 +17,12 @@
 	margin-right: 100px;
 	padding-bottom: 30px;
 }
+/*link to another page*/
 .seemore1
 {
 	margin-left: 1000px;
 }
+/*title heading*/
 .resources
 {
 	display: inline-block;
@@ -28,26 +32,8 @@
 	margin-left: 20px;
 	margin-top: 20px;
 }
-.section1_1
-{
-	border-bottom: thin solid gray;
-	display: inline-block;
-	font: 15px arial, sans-serif;
-	margin-left: 20px;
-	margin-right: 100px;
-	margin-top: 10px;
-	padding-bottom: 30px;
-}
-.section2_1
-{
-	border-bottom: thin solid gray;
-	display: inline-block;
-	font: 15px arial, sans-serif;
-	margin-left: 20px;
-	margin-right: 100px;
-	margin-top: 10px;
-	padding-bottom: 30px;
-}
+
+/*title of section1*/
 .section1
 {
 	color: #6699ff;
@@ -56,6 +42,7 @@
 	margin-left: 20px;
 	padding: auto;
 }
+/*title of section2*/
 .section2
 {
 	color: #6699ff;
@@ -64,6 +51,7 @@
 	margin-left: 20px;
 	padding: auto;
 }
+/*title of section3 */
 .section3
 {
 	color: #6699ff;
@@ -72,6 +60,7 @@
 	margin-left: 20px;
 	padding: auto;
 }
+/*see more title*/
 .see_more
 {
 	display: inline-block;
@@ -81,6 +70,8 @@
 	margin-left: 20px;
 	margin-top: 20px;
 }
+
+/*this is a paragraph on see more page*/
 .para_seemore
 {
 	display: inline-block;
