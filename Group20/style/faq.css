@@ -13,18 +13,15 @@ body .container{
                 border: 0;
                 }
 
-.navbar-default .navbar-brand {color: white;}
+.navbar-inverse .navbar-brand {color: white;}
 
-#header {background-image: url("../images/vancouver_skyline.jpg");
-        background-size: auto;
-        width: 100%;
-        height: 550px;}
+
 
 .navbar-header {width: 100%;}
 
 .nav a {color: white;}
 
-.nav li a:hover {background-color: black;}
+.nav li a:hover {background-color: lightblue;}
 
 .nav-pills li.active a {background-color: rgba(50,50,50,0.4);}
 
@@ -123,3 +120,53 @@ h2 {
 #footer #copyright {font-size: 8px;
                     color: white;
                     padding-left: 7px;}
+
+/*HOMEPAGE- QNA
+----------------------------
+*/
+
+hr{
+    display: block;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2.5px;
+}
+
+
+p{
+    text-align: center;
+}
+h1{ text-align: center;
+	font-weight: 600;
+	font-size: 1.90em;
+	letter-spacing: 4px;
+	text-transform:uppercase;
+	color: #92aac3;
+	padding: .75em
+    
+}
+h2 {
+    text-align: center;
+	font-weight: 600;
+	font-size: 1.75em;
+	letter-spacing: 4px;
+	text-transform:uppercase;
+	color: #92aac3;
+	padding: .75em;
+	}
+
+
+
+
+
+
+.container-60 {
+	margin-left: auto;
+	margin-right: auto;
+	width:60%;
+	text-align:left;
+	position: relative;
+	}
+
