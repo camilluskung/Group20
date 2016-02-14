@@ -1,0 +1,90 @@
+/* HOMEPAGE- resources */
+
+.para1
+{
+	border-bottom: thin solid gray;
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 100px;
+	padding-bottom: 30px;
+}
+.para1_1
+{
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 100px;
+	padding-bottom: 30px;
+}
+.seemore1
+{
+	margin-left: 1000px;
+}
+.resources
+{
+	display: inline-block;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 70px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.section1_1
+{
+	border-bottom: thin solid gray;
+	display: inline-block;
+	font: 15px arial, sans-serif;
+	margin-left: 20px;
+	margin-right: 100px;
+	margin-top: 10px;
+	padding-bottom: 30px;
+}
+.section2_1
+{
+	border-bottom: thin solid gray;
+	display: inline-block;
+	font: 15px arial, sans-serif;
+	margin-left: 20px;
+	margin-right: 100px;
+	margin-top: 10px;
+	padding-bottom: 30px;
+}
+.section1
+{
+	color: #6699ff;
+	display: inline-block;
+	font-family: "Arial", Gadget, sans-serif;
+	margin-left: 20px;
+	padding: auto;
+}
+.section2
+{
+	color: #6699ff;
+	display: inline-block;
+	font-family: "Arial", Gadget, sans-serif;
+	margin-left: 20px;
+	padding: auto;
+}
+.section3
+{
+	color: #6699ff;
+	display: inline-block;
+	font-family: "Arial", Gadget, sans-serif;
+	margin-left: 20px;
+	padding: auto;
+}
+.see_more
+{
+	display: inline-block;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 70px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.para_seemore
+{
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 100px;
+	padding-bottom: 30px;
+}
