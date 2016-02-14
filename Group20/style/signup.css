@@ -3,7 +3,6 @@ label {
 width: 150px;
 float: left;
 text-align: left;
-margin-right: 20x;
 display: block
 }
 /* "Submit" button */
@@ -11,7 +10,7 @@ display: block
 	width: 300px;
 	margin-left: 150px;
 	background: #FF9900;
-	border: thin solid #FF9900;
+	border: thin solid #FF9901;
 }
 
 
