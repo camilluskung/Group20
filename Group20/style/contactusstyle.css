@@ -1,10 +1,13 @@
 /* HOMEPAGE- contact us */
+
+/*google map*/
 .googlemap
 {border: thick solid gray;
 	display: inline-block;
 	margin-left: 100px;
 	margin-right: 100px;
 }
+/*title heading*/
 h1
 { margin-left: 100px;
   text-align: center;
@@ -14,7 +17,7 @@ h1
   letter-spacing: 4px;
   text-transform:uppercase;}
 
-
+/*contact info on the right side */
 .contactInfo {padding-left: 200px;
               padding-top: 100px;}
 
