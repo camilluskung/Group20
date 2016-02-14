@@ -1,21 +1,43 @@
 .body {
-    overflow:hidden;
+	font-family: "Ubuntu";
 }
 
+.breadcrumb {
+	font-weight: bold;
+	padding: 0;
+	font-size: 18px;
+	margin: 20px 0;
+	background-color: white;
+}
+h1 {	
+	font-weight: bold;
+	font-size: 18px;
+}
+.currentpage {
+	font-size: 22px;
+}
+.createthread a{
+	text-decoration: none;
+}
+.createthreadbutton {
+	font-weight: bold;
+	width: 150px;
+	padding: 5px 10px;
+	text-align: center;
+	background-color: yellow;
+}
 .board {
 	margin: 20px 0;
 	border: thin solid black;
 	list-style: none;
 	padding-left: 0;
-
-	font-family: "Ubuntu";
 	font-weight: bold;
 }
-.tableHeader {
+.tableheader {
 	height: 40px;
 	border-bottom: thin solid black;
 }
-.tableHeader p {
+.tableheader p {
 	margin: 5px 10px;
 	font-weight: bold;
 }
@@ -32,21 +54,15 @@
 .thread:nth-child(odd) {
 	padding-top: 10px;
 	background-color: #ffffff;
-	//border-bottom: 10px solid #eef0f0;
 }
 .thread:nth-child(even) {
 	background-color: #eef0f0;
 	padding-top: 10px;
-	//border-bottom: 10px solid #ffffff;
-}
-.thread:last-child {
-	//border-bottom-width: 0;
 }
 .topic {
 	width: 72%;
 	height: 100%;
 	float: left;
-	//border: 10px solid black;
 }
 .view {
 	width: 13%;

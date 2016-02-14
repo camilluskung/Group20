@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>CondoHub</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style/base.css">
-    <link rel="stylesheet" type="text/css" href="style/threadstyle.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+	<title>CondoHub</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style/base.css">
+	<link rel="stylesheet" type="text/css" href="style/threadstyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="banner">
-	  <nav class="navbar nav-pills">
+		<nav class="navbar nav-pills">
+		<a class="navbar-brand" href="index.html"><img src="images/logo.gif" alt="logo" width="60" height="60"></a>
 		<div class="container">
-		  <div class="header">
-			<button type="button" class="navbar-inverse navbar-toggle" data-toggle="collapse" data-target="#mainmenu">
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			</button>
-			  <a class="navbar-brand" href="index.html">CONDOHUB</a>
-		  </div>
-			<div class="collapse navbar-collapse" id="mainmenu">
-			  <ul class="nav nav-pills">
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="about.html">ABOUT US</a></li>
-				<li class="dropdown">
-				  <a class="dropdown-toggle" data-toggle="dropdown" href="#">RESOURCES<span class="caret"></span></a>
-				  <ul class="dropdown-menu">
-				  <li><a href="faq.html">FAQ</a></li>
-				  <li><a href="document.html">Documents</a></li>
-				  </ul>
-				</li>
-				<li class="active"><a href="board.html">BOARD</a></li>
-				<li><a href="contact.html">CONTACT US</a></li>
-			  <ul class="nav nav-pills navbar-right">
-				<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>  
-				<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-			  </ul>
-			  </ul>  
+			<div class="header">
+				<button type="button" class="navbar-inverse navbar-toggle" data-toggle="collapse" data-target="#mainmenu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 			</div>
-		  </div>
-	  </nav>  
+				<div class="collapse navbar-collapse" id="mainmenu">
+					<ul class="nav nav-pills">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="resources.html">Resources</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+						<li class="active"><a href="board.html">Board</a></li>
+						<li><a href="contactus.html">Contact Us</a></li>
+						<li class="nav nav-pills navbar-right"> 
+							<ul class="nav nav-pills navbar-right">
+								<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+								<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+							</ul>
+						</li> 
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</div>
 	
 	<div class="container" id="start">
-		<div class="breadCrumb">
-			<p><a href="board.html#start">Board</a> > Thread</p>
+		<div class="breadcrumb">
+			<h1><a href="board.html#start">Board</a> > <span class="currentpage">Thread</span></h1>
 		</div>
 		<div class="board" id="OP">
+			<div class="reply">
+				<div class="replybutton">
+				<a href="#replybody">
+					reply to thread
+				</a>
+				</div>
+			</div>
 			<div class="post">
 				<div class="userinfo">
 					Waylon Ching
 				</div>
 				<div class="postbody">
-					<h1>Thread Title</h1>
+					<h2>Thread Title</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat neque ut neque pulvinar pretium. Curabitur aliquam dui pharetra orci maximus, nec interdum sem condimentum. Nam faucibus hendrerit leo, faucibus tristique nibh fermentum a. Nulla aliquet porttitor ullamcorper. Ut aliquam posuere massa sed ultrices. Duis sagittis elit nec odio consequat mollis. Aliquam tincidunt neque posuere est ullamcorper egestas. Nulla a nulla varius, vehicula tortor non, fringilla lorem. Nulla a aliquam ante. Donec dignissim mauris vel molestie imperdiet.</p>
 
 					<p>Etiam imperdiet tellus quam. Proin ultricies libero turpis, non molestie lectus tincidunt nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean nec neque metus. Nullam quis sem in sem laoreet ultrices sit amet quis mi. Mauris feugiat, nibh eget blandit lobortis, erat nisl tristique quam, aliquam venenatis felis elit in dui. Sed non augue porta, aliquet ligula porttitor, venenatis dui. Phasellus quis enim eu sapien consectetur suscipit et sed nunc.</p>
@@ -80,27 +84,56 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat neque ut neque pulvinar pretium. Curabitur aliquam dui pharetra orci maximus, nec interdum sem condimentum. Nam faucibus hendrerit leo, faucibus tristique nibh fermentum a. Nulla aliquet porttitor ullamcorper. Ut aliquam posuere massa sed ultrices. Duis sagittis elit nec odio consequat mollis. Aliquam tincidunt neque posuere est ullamcorper egestas. Nulla a nulla varius, vehicula tortor non, fringilla lorem. Nulla a aliquam ante. Donec dignissim mauris vel molestie imperdiet.</p>
 
 					<p>Etiam imperdiet tellus quam. Proin ultricies libero turpis, non molestie lectus tincidunt nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean nec neque metus. Nullam quis sem in sem laoreet ultrices sit amet quis mi. Mauris feugiat, nibh eget blandit lobortis, erat nisl tristique quam, aliquam venenatis felis elit in dui. Sed non augue porta, aliquet ligula porttitor, venenatis dui. Phasellus quis enim eu sapien consectetur suscipit et sed nunc.</p>
+				</div>
+			</div>
+			<div class="reply">
+				<div class="replybutton">
+					reply to thread
+				</div>
+				<div class="replybody" id="replybody">
+					<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" id="replyform">
+						<textarea form="replyform" name="replytextarea" placeholder="write your reply here..."></textarea>
+						<input type="submit" value="post quick reply">
+					</form>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="row">
-	  <div id="footer">
-		<div class="container">
-		  <div class="col-md-4 address">
-			<p class="address_border">1234 FAKE STREET<br>VANCOUVER BC  V3C 4A9<br>CANADA</p>
-		  </div>
-		  <div class="col-md-4 phone">
-			<p class="contact">T 604 555 2345<br>F 604 343 5565<br>info@condohub.com</p>
-		  </div>
-		  <div class="col-md-4 disclaimer">
-			<div style="width: 150px; height: 75px; background-color: white;"></div>
-			<br><p id="copyright">CondoHub &copy; 2016. All rights reserved.</p>
-		  </div>
+	<footer class="footerWrapper">
+		<div class="mainFooter">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="footerWidget">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			  			</div>
+					</div>
+					<div class="col-sm-3 contact">
+						<h3>CondoHub</h3>
+						<address>
+							<p> <i class="glyphicon glyphicon-map-marker"></i>&nbsp;1234 Fake St.<br>
+								&nbsp;Vancouver, BC V5E 3F8<br>&nbsp;Canada<br>
+								<i class="glyphicon glyphicon-phone"></i>&nbsp;604-374-9834 <br>
+								<i class="glyphicon glyphicon-envelope"></i><a href="mailto:info@condohub.ca">&nbsp;info@condohub.ca</a> </p>
+						</address>
+					</div>
+					<div class="col-sm-3 footerLogo">
+						<img src="images/logo.gif" alt="logo" id="footerLogo">
+					</div>
+				</div>
+			</div>
 		</div>
-	  </div>
-	</div>
+		<div class="footerRights">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p>Copyright © 2016 CondoHub / All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 	
 </body>
 </html>
