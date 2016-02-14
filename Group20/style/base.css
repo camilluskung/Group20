@@ -42,7 +42,11 @@ p.paragraph {text-align: left;
             padding-left: 20px;
             padding-right: 20px;}
 
+<<<<<<< HEAD
 .images {text-align: -webkit-center;}
+=======
+.column1 {align-content:;}
+>>>>>>> 52717b7bc2b6d2da5d8e850b1a2b8db1d457f0c7
 
 /* hompeage footer */
 
