@@ -99,16 +99,19 @@ a:link {
 	padding-top: 20px;
 }
 
+/* text margins */
 .bottom p {
 	margin-left: 350px;
 }
 
+/* back button settings */
 #back {
 	margin-left: 350px;
 	width: 200px;
 	height: 30px;
 }
 
+/* link underline */
 .bottom a:link {
 	text-decoration: underline;
 }
