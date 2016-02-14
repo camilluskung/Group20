@@ -39,19 +39,19 @@ button {
 .logobar {
 	padding: 0;
 	height: 100px;
-	border-bottom: solid white 3px;
+	border-bottom: solid white 2px;
 }
 
 /* Title heading */
 .logobar h1 {
 	margin-top: 0;
-	padding-top: 10px; 
-	margin-bottom:0;
+	padding-top: 10px;
+	margin-bottom: 0;
 	font-size: 40px;
 	text-align: center;
 	font-weight: bold;
 	color: white;
-	}
+}
 
 /* Subheading of header */
 .logobar h2 {
@@ -67,7 +67,7 @@ button {
 	float: left;
 	margin-top: 20px;
 	padding-top: 30px;
-	width: 370px;
+	width: 450px;
 	padding-left: 40px;
 	color: white;
 }
@@ -99,16 +99,19 @@ a:link {
 	padding-top: 20px;
 }
 
+/* text margins */
 .bottom p {
 	margin-left: 350px;
 }
 
+/* back button settings */
 #back {
 	margin-left: 350px;
 	width: 200px;
 	height: 30px;
 }
 
+/* add underline to link */
 .bottom a:link {
 	text-decoration: underline;
 }

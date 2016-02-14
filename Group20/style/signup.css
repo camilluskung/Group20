@@ -1,3 +1,4 @@
+/* Labels of the text forms */
 label {
 width: 150px;
 float: left;
@@ -5,8 +6,20 @@ text-align: left;
 margin-right: 20x;
 display: block
 }
-
-
+/* "Submit" button */
+#submit {
+	width: 300px;
+	margin-left: 150px;
+	background: #FF9900;
+	border: thin solid #FF9900;
+}
+/* The content box above the text form */
+.blerb {
+	margin-top: 0;
+	padding-top: 0;
+	border-bottom: solid gray;
+}
+/* The title of the page "Sign Up"*/
 .blerb h1 {
 	font-size: 45px;
 	border-bottom: solid gray;
@@ -14,45 +27,33 @@ display: block
 	padding-top: 0;
 	}
 
+/* Inner heading below title */
 .blerb h2 {
 	margin-top: 10px;
 	font-size: 25px;
 	font-weight: bold;
 }
 
-.blerb {
-	margin-top: 0;
-	padding-top: 0;
-	border-bottom: solid gray;
-}
-
+/* The written paragraph box aligned to the left */
 .innerblerb {
 	width: 500px;
 }
 
+/* The container surrounding the form */
 .formbox {
 	margin-top: 10px;
 	margin-right: auto;
 	margin-left: auto;
 }
-.innerformleft {
-	padding-top: 5px;
-	margin-left: 300px;
-	margin-top: 10px;
-	float: left;
-}
 
-.innerformleft p {
-	margin-bottom: 15px;
-	font-weight: bold;
-}
-
+/* The form container */
 .innerformright {
 	margin-top: 30px;
 	width: 600px;
 	float: right;
 	}
 
+/* The input box of the text form */
 .form1 input {
 	margin-bottom: 10px;
 	width: 300px;
@@ -61,9 +62,3 @@ display: block
 	border: thin solid black;
 }
 
-#submit {
-	width: 300px;
-	margin-left: 150px;
-	background: #FF9900;
-	border: thin solid #FF9900;
-}

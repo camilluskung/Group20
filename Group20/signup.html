@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>CondoHub: Sign Up</title>
+    <title>CondoHub</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,11 +16,10 @@
 
     <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 
-
 </head>
   
 <body>               
-  
+ 
 <div class="banner">
   <nav class="navbar nav-pills">
     <div class="container">
@@ -30,21 +29,15 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-          <a class="navbar-brand" href="index.html">CONDOHUB</a>
       </div>
         <div class="collapse navbar-collapse" id="mainmenu">
           <ul class="nav nav-pills">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">RESOURCES<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="document.html">Documents</a></li>
-              </ul>
-            </li>
-            <li><a href="board.html">BOARD</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
+            <li class="navbar-brand" <a href="index.html"><img src="images/logo.gif" alt="logo" width="60" height="60"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html">Resources</a></li>
+            <li><a href="board.html">Board</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           <ul class="nav nav-pills navbar-right">
             <li class="active"><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>  
             <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -67,26 +60,26 @@ Hello my name is Dongle Jim.Hello my name is Dongle Jim.Hello my name is Dongle 
 </div>
 <div class="formbox">	
 	<div class="innerformright">
-		<form class="form1">
+		<form class="form1" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" target="_blank">
 			<p>
 				<label for="name">Name</label>
-				<input id="name" type="text" name="Name" placeholder="Enter your name">
+				<input id="name" type="text" name="Name" placeholder="&nbsp;Enter your name">
 			</p>
 			<p>
 				<label for="username">Username</label>
-				<input id="username" type="text" name="Username" placeholder="Enter your username">
+				<input id="username" type="text" name="Username" placeholder="&nbsp;Enter your username">
 			</p>
 			<p>
 				<label for="email">E-mail</label>			
-				<input id="email" type="text" name="E-mail" placeholder="Enter your e-mail">
+				<input id="email" type="text" name="E-mail" placeholder="&nbsp;Enter your e-mail">
 			</p>
 			<p>
-				<label for="username">Password</label>
-				<input id="username" type="text" name="Password" placeholder="Enter the password">			
+				<label for="password">Password</label>
+				<input id="password" type="text" name="Password" placeholder="&nbsp;Enter the password">			
 			</p>
 			<p>
-				<label for="email">Confirm Password</label>
-				<input id="email" type="text" name="Confirm Password" placeholder="Confirm the password">
+				<label for="confirmp">Confirm Password</label>
+				<input id="confirmp" type="text" name="Confirm Password" placeholder="&nbsp;Confirm the password">
 			</p>
 			<p>
 				<input id="submit" type="submit" value="Create Account">
@@ -98,30 +91,44 @@ Hello my name is Dongle Jim.Hello my name is Dongle Jim.Hello my name is Dongle 
       </div>
     </div>
   
-        <div class="row">
-          <div id="footer">
-            <div class="container">
-              <div class="col-md-4 address">
-                <p class="address_border">1234 FAKE STREET<br>VANCOUVER BC  V3C 4A9<br>CANADA</p>
-              </div>
-              
-              <div class="col-md-4 phone">
-                <p class="contact">T 604 555 2345<br>F 604 343 5565<br>info@condohub.com</p>
-              </div>
-              
-              <div class="col-md-4 disclaimer">
-                <div style="width: 150px; height: 75px; background-color: white;"></div>
-                <br><p id="copyright">CondoHub &copy; 2016. All rights reserved.</p>
-                
-              </div>
-            </div>
-          </div>
-        </div>
+        <footer class="footerWrapper">
+	<section class="mainFooter">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="footerWidget">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						  
+					</div>
+				</div>
+				<div class="col-sm-3 contact">
+						<h3>CondoHub</h3>
+						<address>
+							<p> <i class="glyphicon glyphicon-map-marker"></i>&nbsp;1234 Fake St.<br>
+								&nbsp;Vancouver, BC V5E 3F8<br>&nbsp;Canada<br>
+								<i class="glyphicon glyphicon-phone"></i>&nbsp;604-374-9834 <br>
+								<i class="glyphicon glyphicon-envelope"></i><a href="mailto:info@condohub.ca">&nbsp;info@condohub.ca</a> </p>
+							</address>
+						
+					</div>
+					<div class="col-sm-3 footerLogo">
+						<img src="images/logo.gif" alt="logo" id="footerLogo">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="footerRights">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p>Copyright © 2016 CondoHub / All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+</footer>
         
   
-      
-   
-        
 
 
 
