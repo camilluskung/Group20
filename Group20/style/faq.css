@@ -17,18 +17,19 @@ body .container{
 
 .icon-bar {background-color: white;}
 
-.navbar-brand {padding-top: 0px;
-              color: ;}
+.navbar-brand {padding-top: 0px;}
 
-.nav a {color: white;}
 
-.nav li {display: block;}
 
-.nav li a:hover {background-color: skyblue;}
+.nav a {color: orange;}
+
+.nav li {display: white;}
+
+.nav li a:hover {background-color: white;}
 
 .nav-pills li.active a {background-color: rgba(50,50,50,0.4);}
 
-.nav-pills li.active a:hover{background-color: orange;}
+.nav-pills li.active a:hover{background-color: gainsboro;}
 
 /* homepage content */  
 
