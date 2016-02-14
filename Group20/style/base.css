@@ -6,9 +6,8 @@ html{min-width:300px;
 
 /* Body */
 
-body .container{
-        margin: 0 auto;
-        padding:0;}
+body .container{margin: 0 auto;
+                padding:0;}
 
 /* navigation */
 
@@ -35,7 +34,12 @@ body .container{
 
 .content1 {padding: 30px;}
 
-h1.section {text-align: center;}
+h1.section {text-align: center;
+            color: #92aac3;
+            font-weight: 600;
+            font-size: 1.90em;
+	          letter-spacing: 4px;
+            text-transform:uppercase;}
 
 p.paragraph {text-align: left;
             padding-left: 20px;
@@ -81,7 +85,12 @@ p.paragraph {text-align: left;
 
 /* about content */
 
-.aboutcolumn1 h1 {text-align: center;}
+.aboutcolumn1 h1 {text-align: center;
+                  color: #92aac3;
+                  font-weight: 600;
+                  font-size: 1.90em;
+	                letter-spacing: 4px;
+	                text-transform:uppercase;}
 
 .aboutcontent {padding-top: 25px;
               padding-bottom: 25px;}
