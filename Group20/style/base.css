@@ -9,7 +9,7 @@ html{min-width:300px;
 body .container{margin: 0 auto;
                 padding:0;}
 
-/* navigation */
+/* Navigation */
 
 .banner {background-image: url("../images/vancouver_skyline.jpg");
         background-repeat: no-repeat;
@@ -32,7 +32,7 @@ body .container{margin: 0 auto;
 
 .nav-pills li.active a:hover{background-color: black;}
 
-/* homepage content */  
+/* Homepage content */  
 
 .content1 {padding: 30px;}
 
@@ -50,7 +50,7 @@ p.paragraph {text-align: left;
 .images {text-align: -webkit-center;}
 
 
-/* hompeage footer */
+/* Footer */
 
 
 
@@ -85,7 +85,7 @@ p.paragraph {text-align: left;
                     color: white;
                     padding-left: 7px;}
 
-/* about content */
+/* About content */
 
 .aboutcolumn1 h1 {text-align: center;
                   color: #92aac3;
