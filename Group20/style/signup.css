@@ -62,10 +62,22 @@ display: block
 
 /* The input box of the text form */
 .form1 input {
-	margin-bottom: 10px;
 	width: 300px;
 	color: black;
 	background: white;
 	border: thin solid black;
 }
+
+.message {
+  color: red;
+  font-size: 9px;
+  padding-top: 5px;
+  padding-left: 150px;
+}
+
+.formBox {
+  margin-bottom: 10px;
+}
+
+
 

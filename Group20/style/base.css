@@ -32,6 +32,8 @@ body .container{margin: 0 auto;
 
 .nav-pills li.active a:hover{background-color: black;}
 
+.container1 .navbar-right{padding-right: 10px;}
+
 /* Homepage content */  
 
 .content1 {padding: 30px;}

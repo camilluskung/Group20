@@ -23,7 +23,7 @@
       function validateForm() {
         var name = document.forms["signUpForm"]["name"].value;
         if (name == null || name == "") {
-        document.getElementById("nameError").innerHTML="Name is invalid";
+        document.getElementById("nameError").innerHTML="*Name is invalid*";
         document.forms["signUpForm"]["name"].focus();
         return false;
         }
@@ -33,7 +33,7 @@
         
         var userName = document.forms["signUpForm"]["userName"].value;
         if (userName == null || userName == "") {
-        document.getElementById("userError").innerHTML="Username is invalid";
+        document.getElementById("userError").innerHTML="*Username is invalid*";
         document.forms["signUpForm"]["userName"].focus();
         return false;
         }
@@ -43,7 +43,7 @@
         
         var email = document.forms["signUpForm"]["email"].value;
         if (email == null || email == "") {
-        document.getElementById("emailError").innerHTML="E-mail is invalid";
+        document.getElementById("emailError").innerHTML="*E-mail is invalid*";
         document.forms["signUpForm"]["email"].focus();
         return false;
         }
@@ -53,7 +53,7 @@
         
         var password = document.forms["signUpForm"]["password"].value;
         if (password == null || password == "") {
-        document.getElementById("passwordError").innerHTML="Please enter password";
+        document.getElementById("passwordError").innerHTML="*Please enter password*";
         document.forms["signUpForm"]["password"].focus();
         return false;
         }
@@ -63,12 +63,12 @@
         
         var confirm = document.forms["signUpForm"]["confirm"].value;
         if (confirm == null || confirm == "") {
-        document.getElementById("confirmError").innerHTML="Please confirm password";
+        document.getElementById("confirmError").innerHTML="*Please confirm password*";
         document.forms["signUpForm"]["confirm"].focus();
         return false;
         }
         if (confirm != password) {
-          document.getElementById("confirmError").innerHTML="No match";
+          document.getElementById("confirmError").innerHTML="*Password does not match*";
         return false;
         }
         if (confirm != null || confirm != "") {
@@ -91,7 +91,7 @@
 <div class="banner">
   <nav class="navbar nav-pills">
     <a class="navbar-brand" href="index.html"><img src="images/logo.gif" alt="logo" width="60" height="60"></a>
-    <div class="container">
+    <div class="container1">
       <div class="header">
         <button type="button" class="navbar-inverse navbar-toggle" data-toggle="collapse" data-target="#mainmenu">
           <span class="icon-bar"></span>
@@ -149,7 +149,7 @@
 			</div>
 			<div class="formBox">
 				<label for="email">E-mail</label>			
-				<input id="email" type="text" name="email" placeholder="&nbsp;Enter your e-mail">
+				<input id="email" type="email" name="email" placeholder="&nbsp;Enter your e-mail">
         <div class="message" id="emailError"></div>
       </div>
 			<div class="formBox">
