@@ -18,6 +18,69 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
     <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    
+    <script>
+      function validateForm() {
+        var name = document.forms["signUpForm"]["name"].value;
+        if (name == null || name == "") {
+        document.getElementById("nameError").innerHTML="Name is invalid";
+        document.forms["signUpForm"]["name"].focus();
+        return false;
+        }
+        if (name != null || name != "") {
+          document.getElementById("nameError").innerHTML="";
+        }
+        
+        var userName = document.forms["signUpForm"]["userName"].value;
+        if (userName == null || userName == "") {
+        document.getElementById("userError").innerHTML="Username is invalid";
+        document.forms["signUpForm"]["userName"].focus();
+        return false;
+        }
+        if (userName != null || userName != "") {
+          document.getElementById("userError").innerHTML="";
+        }
+        
+        var email = document.forms["signUpForm"]["email"].value;
+        if (email == null || email == "") {
+        document.getElementById("emailError").innerHTML="E-mail is invalid";
+        document.forms["signUpForm"]["email"].focus();
+        return false;
+        }
+        if (email != null || email != "") {
+          document.getElementById("emailError").innerHTML="";
+        }
+        
+        var password = document.forms["signUpForm"]["password"].value;
+        if (password == null || password == "") {
+        document.getElementById("passwordError").innerHTML="Please enter password";
+        document.forms["signUpForm"]["password"].focus();
+        return false;
+        }
+        if (password != null || password != "") {
+          document.getElementById("passwordError").innerHTML="";
+        }
+        
+        var confirm = document.forms["signUpForm"]["confirm"].value;
+        if (confirm == null || confirm == "") {
+        document.getElementById("confirmError").innerHTML="Please confirm password";
+        document.forms["signUpForm"]["confirm"].focus();
+        return false;
+        }
+        if (confirm != password) {
+          document.getElementById("confirmError").innerHTML="No match";
+        return false;
+        }
+        if (confirm != null || confirm != "") {
+          document.getElementById("confirmError").innerHTML="";
+        }
+        
+        else {
+          return true;
+        }
+      }
+  
+  </script>
 
 </head>
 
@@ -73,30 +136,35 @@
 		</div>
 	<!-- Right: text forms  -->
 	<div class="innerformright">
-		<form class="form1" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
-			<p>
+		<form name="signUpForm" class="form1" action="http://webdevfoundations.net/scripts/formdemo.asp" onSubmit="return validateForm()" method="post" >
+			<div class="formBox">
 				<label for="name">Name</label>
-				<input id="name" type="text" name="Name" placeholder="&nbsp;Enter your name">
-			</p>
-			<p>
+				<input id="name" type="text" name="name" placeholder="&nbsp;Enter your name">
+        <div class="message" id="nameError"></div> 
+      </div>
+			<div class="formBox">
 				<label for="username">Username</label>
-				<input id="username" type="text" name="Username" placeholder="&nbsp;Enter your username">
-			</p>
-			<p>
+				<input id="username" type="text" name="userName" placeholder="&nbsp;Enter your username">
+      <div class="message" id="userError"></div>
+			</div>
+			<div class="formBox">
 				<label for="email">E-mail</label>			
-				<input id="email" type="text" name="E-mail" placeholder="&nbsp;Enter your e-mail">
-			</p>
-			<p>
+				<input id="email" type="text" name="email" placeholder="&nbsp;Enter your e-mail">
+        <div class="message" id="emailError"></div>
+      </div>
+			<div class="formBox">
 				<label for="password">Password</label>
-				<input id="password" type="text" name="Password" placeholder="&nbsp;Enter the password">			
-			</p>
-			<p>
+				<input id="password" type="password" name="password" placeholder="&nbsp;Enter the password">
+        <div class="message" id="passwordError"></div>
+			</div>
+			<div class="formBox">
 				<label for="confirmp">Confirm Password</label>
-				<input id="confirmp" type="text" name="Confirm Password" placeholder="&nbsp;Confirm the password">
-			</p>
-			<p>
+				<input id="confirmp" type="password" name="confirm" placeholder="&nbsp;Confirm the password">
+        <div class="message" id="confirmError"></div>
+			</div>
+			<div class="formBox">
 				<input id="submit" type="submit" value="Create Account">
-			</p>
+			</div>
 		</form>
 	</div>
       </div>
