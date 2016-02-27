@@ -1,0 +1,13 @@
+/* About content */
+
+.aboutcolumn1 h1 {text-align: center;
+                  color: #92aac3;
+                  font-weight: 600;
+                  font-size: 1.90em;
+	                letter-spacing: 4px;
+	                text-transform:uppercase;}
+
+.aboutcontent {padding-top: 25px;
+              padding-bottom: 25px;}
+
+.aboutcolumn2 {padding-left: 50px;}

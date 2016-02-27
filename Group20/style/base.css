@@ -34,27 +34,8 @@ body .container{margin: 0 auto;
 
 .container1 .navbar-right{padding-right: 10px;}
 
-/* Homepage content */  
-
-.content1 {padding: 30px;}
-
-h1.section {text-align: center;
-            color: #92aac3;
-            font-weight: 600;
-            font-size: 1.90em;
-	          letter-spacing: 4px;
-            text-transform:uppercase;}
-
-p.paragraph {text-align: left;
-            padding-left: 20px;
-            padding-right: 20px;}
-
-.images {text-align: -webkit-center;}
-
 
 /* Footer */
-
-
 
 #footer {background-color: dimgrey;
         width: 100%;
@@ -86,19 +67,5 @@ p.paragraph {text-align: left;
 #footer #copyright {font-size: 8px;
                     color: white;
                     padding-left: 7px;}
-
-/* About content */
-
-.aboutcolumn1 h1 {text-align: center;
-                  color: #92aac3;
-                  font-weight: 600;
-                  font-size: 1.90em;
-	                letter-spacing: 4px;
-	                text-transform:uppercase;}
-
-.aboutcontent {padding-top: 25px;
-              padding-bottom: 25px;}
-
-.aboutcolumn2 {padding-left: 50px;}
 
 
