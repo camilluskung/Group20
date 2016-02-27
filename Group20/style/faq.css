@@ -1,7 +1,7 @@
 /*HOMEPAGE- QNA
 ----------------------------
 */
-
+.container1 .navbar-right{padding-right: 10px;}
 hr{
     display: block;
     margin-top: 1em;
@@ -41,7 +41,9 @@ h2 {
 	text-align:left;
 	position: relative;
 	}
-
+p{
+    text-align: justify;
+}
 
 
 
