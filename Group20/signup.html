@@ -21,9 +21,10 @@
     
     <script>
       function validateForm() {
-        var name = document.forms["signUpForm"]["name"].value;
+        var nameRegex = /^[a-zA-Z\-]+$/;
+        var name = document.forms["signUpForm"]["name"].value.match(nameRegex);
         if (name == null || name == "") {
-        document.getElementById("nameError").innerHTML="*Name is invalid*";
+        document.getElementById("nameError").innerHTML="*Name is invalid (No numeric or special characters*";
         document.forms["signUpForm"]["name"].focus();
         return false;
         }
@@ -31,7 +32,8 @@
           document.getElementById("nameError").innerHTML="";
         }
         
-        var userName = document.forms["signUpForm"]["userName"].value;
+        var userNameRegex = /^[a-zA-Z0-9\_-]+$/;
+        var userName = document.forms["signUpForm"]["userName"].value.match(userNameRegex);
         if (userName == null || userName == "") {
         document.getElementById("userError").innerHTML="*Username is invalid*";
         document.forms["signUpForm"]["userName"].focus();
