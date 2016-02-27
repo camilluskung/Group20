@@ -28,6 +28,36 @@ button {
 	color: white;
 }
 
+/* Error message for name */
+#errorUName {
+	color: red;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+/* Error message for password */
+#errorPassword {
+	color: red;
+	font-weight: 200;
+	font-size: 11px;
+}
+
+/* Input div */
+.usernamediv {
+	height: 95px;
+	padding-bottom: 0;
+}
+
+/* Password div */
+.passworddiv {
+	height: 112px;
+	padding-bottom: 0;
+}
+/* Submit div */
+.submitdiv {
+	margin-top:5px;
+}
+
 /* Main wrapper of content */
 .container {
 	width: 900px;
@@ -68,7 +98,7 @@ button {
 	margin-top: 20px;
 	padding-top: 30px;
 	width: 370px;
-	padding-left: 40px;
+	padding-left: 20px;
 	color: white;
 }
 
