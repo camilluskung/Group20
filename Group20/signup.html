@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" type="text/css" href="style/base.css">
 	
-	<link rel="stylesheet" type="text/css" href="style/signup.css">
+	 <link rel="stylesheet" type="text/css" href="style/signup.css">
 	
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -21,9 +21,10 @@
     
     <script>
       function validateForm() {
-        var name = document.forms["signUpForm"]["name"].value;
+        var nameRegex = /^[a-zA-Z\-]+$/;
+        var name = document.forms["signUpForm"]["name"].value.match(nameRegex);
         if (name == null || name == "") {
-        document.getElementById("nameError").innerHTML="*Name is invalid*";
+        document.getElementById("nameError").innerHTML="*Name is invalid (No numeric or special characters*";
         document.forms["signUpForm"]["name"].focus();
         return false;
         }
@@ -31,7 +32,8 @@
           document.getElementById("nameError").innerHTML="";
         }
         
-        var userName = document.forms["signUpForm"]["userName"].value;
+        var userNameRegex = /^[a-zA-Z0-9\_-]+$/;
+        var userName = document.forms["signUpForm"]["userName"].value.match(userNameRegex);
         if (userName == null || userName == "") {
         document.getElementById("userError").innerHTML="*Username is invalid*";
         document.forms["signUpForm"]["userName"].focus();
@@ -41,9 +43,11 @@
           document.getElementById("userError").innerHTML="";
         }
         
-        var email = document.forms["signUpForm"]["email"].value;
+        
+        var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        var email = document.forms["signUpForm"]["email"].value.match(emailRegex);  
         if (email == null || email == "") {
-        document.getElementById("emailError").innerHTML="*E-mail is invalid*";
+        document.getElementById("emailError").innerHTML="*E-mail is invalid (must include @gmail.com, @hotmail.com, @shaw.ca)*";
         document.forms["signUpForm"]["email"].focus();
         return false;
         }
@@ -51,9 +55,10 @@
           document.getElementById("emailError").innerHTML="";
         }
         
-        var password = document.forms["signUpForm"]["password"].value;
+        var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}$/;
+        var password = document.forms["signUpForm"]["password"].value.match(passwordRegex);
         if (password == null || password == "") {
-        document.getElementById("passwordError").innerHTML="*Please enter password*";
+        document.getElementById("passwordError").innerHTML="*Please enter password (must be 6 characters and include an UPPERCASE, lowercase and a digit*";
         document.forms["signUpForm"]["password"].focus();
         return false;
         }
@@ -90,7 +95,7 @@
 <!-- Navigation -->
 <div class="banner">
   <nav class="navbar nav-pills">
-    <a class="navbar-brand" href="index.html"><img src="images/logo.gif" alt="logo" width="60" height="60"></a>
+    <a class="navbar-brand" href="index.html"><img src="images/logoName.gif" alt="logo" width="100" height="40"></a>
     <div class="container1">
       <div class="header">
         <button type="button" class="navbar-inverse navbar-toggle" data-toggle="collapse" data-target="#mainmenu">
@@ -139,27 +144,27 @@
 		<form name="signUpForm" class="form1" action="http://webdevfoundations.net/scripts/formdemo.asp" onSubmit="return validateForm()" method="post" >
 			<div class="formBox">
 				<label for="name">Name</label>
-				<input id="name" type="text" name="name" placeholder="&nbsp;Enter your name">
+				<input id="name" type="text" name="name" placeholder="&nbsp;Enter your name" maxlength="40">
         <div class="message" id="nameError"></div> 
       </div>
 			<div class="formBox">
 				<label for="username">Username</label>
-				<input id="username" type="text" name="userName" placeholder="&nbsp;Enter your username">
+				<input id="username" type="text" name="userName" placeholder="&nbsp;Enter your username" maxlength="40">
       <div class="message" id="userError"></div>
 			</div>
 			<div class="formBox">
 				<label for="email">E-mail</label>			
-				<input id="email" type="email" name="email" placeholder="&nbsp;Enter your e-mail">
+				<input id="email" type="text" name="email" placeholder="&nbsp;Enter your e-mail" maxlength="40">
         <div class="message" id="emailError"></div>
       </div>
 			<div class="formBox">
 				<label for="password">Password</label>
-				<input id="password" type="password" name="password" placeholder="&nbsp;Enter the password">
+				<input id="password" type="password" name="password" placeholder="&nbsp;Enter the password" maxlength="40">
         <div class="message" id="passwordError"></div>
 			</div>
 			<div class="formBox">
 				<label for="confirmp">Confirm Password</label>
-				<input id="confirmp" type="password" name="confirm" placeholder="&nbsp;Confirm the password">
+				<input id="confirmp" type="password" name="confirm" placeholder="&nbsp;Confirm the password" maxlength="40">
         <div class="message" id="confirmError"></div>
 			</div>
 			<div class="formBox">
@@ -193,7 +198,7 @@
   						
   					</div>
   					<div class="col-sm-3 footerLogo">
-  						<img src="images/logo.gif" alt="logo" id="footerLogo">
+  						<img src="images/logo.gif" alt="logo" width="150" height="100" id="footerLogo">
   					</div>
   				</div>
   			</div>

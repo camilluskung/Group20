@@ -1,0 +1,16 @@
+/* Homepage content */  
+
+.content1 {padding: 30px;}
+
+h1.section {text-align: center;
+            color: #92aac3;
+            font-weight: 600;
+            font-size: 1.90em;
+	          letter-spacing: 4px;
+            text-transform:uppercase;}
+
+p.paragraph {text-align: left;
+            padding-left: 20px;
+            padding-right: 20px;}
+
+.images {text-align: -webkit-center;}

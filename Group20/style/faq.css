@@ -33,13 +33,25 @@ h2 {
 	}
 
 
+#bookmark{ 
+    padding:50px;
+    color: orange;
+    text-align:center;
+    font-size: 1.5em;
+    color: #92aac3;
+    text-decoration: underline;
+}
+
 
 .container-60 {
 	margin-left: auto;
 	margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 	width:60%;
 	text-align:left;
 	position: relative;
+    
 	}
 p{
     text-align: justify;

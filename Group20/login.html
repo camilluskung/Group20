@@ -16,11 +16,37 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
-    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js">
-    
-  </script>
-  
-    
+    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+	
+	<script>
+	function validateLoginForm() {
+        var usernameRegex = /^[a-zA-Z\-_]+$/;
+		//var emailRegex =/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<
+		var usernameVal = document.forms["loginform"]["username"].value.match(usernameRegex);
+        if (usernameVal == null || usernameVal == "") {
+        document.getElementById("errorUName").innerHTML="Username must have A-Z, a-z, 0-9";
+        document.forms["loginform"]["username"].focus();
+        return false;
+        }
+        if (usernameVal != null || usernameVal != "") {
+          document.getElementById("errorUName").innerHTML="";
+        }
+		var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}$/;
+        var passwordVal = document.forms["loginform"]["password"].value.match(passwordRegex);
+        if (passwordVal == null || passwordVal == "") {
+        document.getElementById("errorPassword").innerHTML="Must be at least six characters. At least one UPPERCASE, one lower case, and a digit";
+        document.forms["loginform"]["password"].focus();
+        return false;
+        }
+        if (passwordVal != null || passwordVal != "") {
+          document.getElementById("errorPassword").innerHTML="";
+        }
+        
+        else {
+          return true;
+        }
+      }
+    </script>
 </head>
 
 <!-- Body -->  
@@ -41,20 +67,29 @@
 <!-- Left column: text forms for username and password -->
 <div class="leftcol">
 <!-- Text form labels and text fields -->
-<form class="form1" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
-			<p>
-				<label for="username">Username or E-mail</label>
-				<br><input id="username" type="text" name="username" placeholder="&nbsp;Username or E-mail">
-			</p>
-			<p>
-				<label for="password">Password</label>
-				<br><input id="password" type="password" name="password" placeholder="&nbsp;Password">
-			</p>
-			<p>
+<form name="loginform" class="form1" onsubmit="return validateLoginForm()" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+			<div class="usernamediv">
+				<label for="username">Username</label>&nbsp;
+				<br><input id="username" type="text" name="username" placeholder="&nbsp;Username" maxlength="40">
+				<br><span id="errorUName"></span>
+			</div>
+			<div class="passworddiv">
+				<label for="password">Password</label>&nbsp;
+				<br><input id="password" type="password" name="password" placeholder="&nbsp;Password" maxlength="40">
+				<br><span id="errorPassword"></span>
+			</div>
+			<div class="submitdiv">
 				<input id="submit" type="submit" value="Submit">
 				<a href=forgot.html>Forgot password</a>
-			</p>
+			</div>
 </form>
+<a href="http://time.is/Vancouver" id="time_is_link" rel="nofollow" style="font-size:20px;color:white">Time in Vancouver:</a>
+<span id="Vancouver_z18c" style="font-size:20px;color:white"></span>
+<script src="http://widget.time.is/en_gb.js"></script>
+<script>
+time_is_widget.init({Vancouver_z18c:{template:"TIME<br>DATE", time_format:"12hours:minutesAMPM", date_format:"monthname dnum,year dayname"}});
+</script>
+
 </div>
 
 <!-- Right Column: Logo -->
