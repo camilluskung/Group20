@@ -20,7 +20,7 @@
 	
 	<script>
 	function validateLoginForm() {
-        var usernameRegex = /^[a-zA-Z\-_]+$/;
+        var usernameRegex = /^[0-9a-zA-Z\-_]+$/;
 		//var emailRegex =/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<
 		var usernameVal = document.forms["loginform"]["username"].value.match(usernameRegex);
         if (usernameVal == null || usernameVal == "") {
