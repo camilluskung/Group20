@@ -21,7 +21,7 @@
     
     <script>
       function validateForm() {
-        var nameRegex = /^[a-zA-Z\-]+$/;
+        var nameRegex = /^([a-zA-Z\-\s]{2,40})+$/;
         var name = document.forms["signUpForm"]["name"].value.match(nameRegex);
         if (name == null || name == "") {
         document.getElementById("nameError").innerHTML="*Name is invalid (No numeric or special characters*";
@@ -32,10 +32,10 @@
           document.getElementById("nameError").innerHTML="";
         }
         
-        var userNameRegex = /^[a-zA-Z0-9\_-]+$/;
+        var userNameRegex = /^([a-zA-Z0-9\_]{6,40})+$/;
         var userName = document.forms["signUpForm"]["userName"].value.match(userNameRegex);
         if (userName == null || userName == "") {
-        document.getElementById("userError").innerHTML="*Username is invalid*";
+        document.getElementById("userError").innerHTML="*Username is invalid (must be 6 chracters in length)*";
         document.forms["signUpForm"]["userName"].focus();
         return false;
         }
@@ -55,7 +55,7 @@
           document.getElementById("emailError").innerHTML="";
         }
         
-        var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}$/;
+        var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6}$/;
         var password = document.forms["signUpForm"]["password"].value.match(passwordRegex);
         if (password == null || password == "") {
         document.getElementById("passwordError").innerHTML="*Please enter password (must be 6 characters and include an UPPERCASE, lowercase and a digit*";
@@ -84,7 +84,6 @@
           return true;
         }
       }
-  
   </script>
 
 </head>
