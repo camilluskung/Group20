@@ -17,30 +17,34 @@
 		}
 
 		function testSubjectValid(id) {
-			return ($(id).value.length > 0);
+			var str = $(id).value.trim();
+			return (str.length > 0);
 		}
 
 		function warnSubjectInvalid(id) {
 			if (!testSubjectValid(id)) {
-				$("errMsgSubject").innerHTML = "Thread subject cannot be empty";
+				if ($("errMsgSubject").innerHTML.length == 0)
+					$("errMsgSubject").innerHTML = "Thread subject cannot be empty";
 				return false;
 			} else {
-				/*if ($("errMsgSubject").value.length > 0) */
+				if ($("errMsgSubject").innerHTML.length > 0)
 					$("errMsgSubject").innerHTML = "";
 				return true;
 			}
 		}
 
 		function testBodyValid(id) {
-			return ($(id).value.length > 0);
+			var str = $(id).value.trim();
+			return (str.length > 0);
 		}
 
 		function warnBodyInvalid(id) {
 			if (!testBodyValid(id)) {
-				$("errMsgBody").innerHTML = "Thread body cannot be empty";
+				if ($("errMsgBody").innerHTML.length == 0)
+					$("errMsgBody").innerHTML = "Thread body cannot be empty";
 				return false;
 			} else {
-				/*if ($("errMsgBody").value.length > 0)*/
+				if ($("errMsgBody").innerHTML.length > 0)
 					$("errMsgBody").innerHTML = "";
 				return true;
 			}
@@ -104,7 +108,7 @@
 		<div class=createthread>
 			<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" id="threadform" 
 				onSubmit="return validateThread()">
-				<label for="txtSubject">Title</label>
+				<label for="txtSubject">Subject</label>
 				<input type="text" name="txtSubject" id="txtSubject">
 				<div class="message" id="errMsgSubject"></div>
 				<textarea form="threadform" name="taBody" id="taBody" placeholder="write your post here..."></textarea>

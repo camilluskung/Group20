@@ -17,15 +17,18 @@
 		}
 
 		function testBodyValid(id) {
-			return ($(id).value.length > 0);
+			var str = $(id).value.trim();
+			return (str.length > 0);
 		}
 
 		function warnBodyInvalid(id) {
 			if (!testBodyValid(id)) {
-				$("errMsgBody").innerHTML = "Post body cannot be empty";
+				if ($("errMsgBody").innerHTML.length == 0)
+					$("errMsgBody").innerHTML = "Post body cannot be empty";
 				return false;
 			} else {
-				$("errMsgBody").innerHTML = "";
+				if ($("errMsgBody").innerHTML.length > 0)
+					$("errMsgBody").innerHTML = "";
 				return true;
 			}
 		}
