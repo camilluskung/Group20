@@ -20,11 +20,127 @@
     <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
     
     <script>
+        function $(id) {
+			  var element = document.getElementById(id);
+			  return element;
+		  } 
+      
+      function testNameValid(id) {
+        var nameRegex = /^([a-zA-Z\-\s]{2,40})+$/;
+        var name = $(id).value.match(nameRegex);
+        return name;
+      }
+        
+      function warnNameInvalid(id) {
+        if (!testNameValid(id)) {
+          $("nameError").innerHTML="*Name is invalid (No numeric or special characters)*";
+          return false;
+        } else {
+          $("nameError").innerHTML="";
+          return true;
+        }
+      } 
+      
+      function testUserNameValid(id) {
+        var userNameRegex = /^([a-zA-Z0-9\_]{6,40})+$/;
+        var userName = $(id).value.match(userNameRegex);
+        return userName;
+      }
+      
+      function warnUserNameInvalid(id) {
+        if (!testUserNameValid(id)) {
+        $("userError").innerHTML="*Username is invalid (must be 6 chracters in length)*";
+        return false;
+        } else {
+        $("userError").innerHTML="";
+        return true;
+        }
+      }
+      
+      function testEmailValid(id) {
+        var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        var email = $(id).value.match(emailRegex);
+        return email;
+      }
+      
+      function warnEmailInvalid(id) {
+        if (!testEmailValid(id)) {
+        $("emailError").innerHTML="*E-mail is invalid (must include @gmail.com, @hotmail.com, @shaw.ca)*";
+        return false;
+        } else {
+        $("emailError").innerHTML="";
+        return true;
+        }
+      }
+      
+      function testPasswordValid(id) {
+        var passwordRegex = /^((?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,})$/;
+        var password = $(id).value.match(passwordRegex);
+        return password;
+      }
+      
+      function warnPasswordInvalid(id) {
+        if (!testPasswordValid(id)) {
+        $("passwordError").innerHTML="*Please enter password (must be 6 characters and include an UPPERCASE, lowercase and a digit*"; 
+        return false;
+        } else {
+        $("passwordError").innerHTML="";
+        return true;
+        }
+      }
+      
+      function testConfirmValid(id) {
+        var confirm = $(id).value;
+        if (confirm == password) {
+        return true;
+        }
+      }
+      
+      function warnConfirmInvalid(id) {
+        if (!testPasswordValid(id)) {
+          $("confirmError").innerHTML="*Password does not match*"
+          return false;
+        } else {
+          $("confirmError").innerHTML="";
+          return true;
+        }
+      }
+      
       function validateForm() {
+        var nameFlag = false;
+        var userFlag = false;
+        var emailFlag = false;
+        var passwordFlag = false;
+        var confirmFlag = false;
+        if (warnNameInvalid("txtName"))
+          nameFlag = true;
+        else 
+          nameFlag = false;
+        if (warnUserNameInvalid("txtUserName"))
+          userFlag = true;
+        else
+          userFlag = false;
+        if (warnEmailInvalid("txtEmail"))
+          emailFlag = true;
+        else
+          emailFlag = false;
+        if (warnPasswordInvalid("txtPassword"))
+          passwordFlag = true;
+        else
+          passwordFlag = false;
+        if (warnConfirmInvalid("txtConfirm"))
+          confirmFlag = true;
+        else
+          confirmFlag = false;
+        return nameFlag && userFlag && emailFlag && passwordFlag && confirmFlag;
+      }
+      
+        /*function validateForm() {
+        
         var nameRegex = /^([a-zA-Z\-\s]{2,40})+$/;
         var name = document.forms["signUpForm"]["name"].value.match(nameRegex);
         if (name == null || name == "") {
-        document.getElementById("nameError").innerHTML="*Name is invalid (No numeric or special characters*";
+        document.getElementById("nameError").innerHTML="*Name is invalid (No numeric or special characters)*";
         document.forms["signUpForm"]["name"].focus();
         return false;
         }
@@ -42,8 +158,7 @@
         if (userName != null || userName != "") {
           document.getElementById("userError").innerHTML="";
         }
-        
-        
+      
         var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         var email = document.forms["signUpForm"]["email"].value.match(emailRegex);  
         if (email == null || email == "") {
@@ -83,7 +198,7 @@
         else {
           return true;
         }
-      }
+      }*/
   </script>
 
 </head>
@@ -140,30 +255,30 @@
 		</div>
 	<!-- Right: text forms  -->
 	<div class="innerformright">
-		<form name="signUpForm" class="form1" action="http://webdevfoundations.net/scripts/formdemo.asp" onSubmit="return validateForm()" method="post" >
+		<form name="signUpForm" class="form1" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateForm()" method="post" >
 			<div class="formBox">
 				<label for="name">Name</label>
-				<input id="name" type="text" name="name" placeholder="&nbsp;Enter your name" maxlength="40">
+				<input id="txtName" type="text" name="name" placeholder="&nbsp;Enter your name" maxlength="40">
         <div class="message" id="nameError"></div> 
       </div>
 			<div class="formBox">
 				<label for="username">Username</label>
-				<input id="username" type="text" name="userName" placeholder="&nbsp;Enter your username" maxlength="40">
+				<input id="txtUserName" type="text" name="userName" placeholder="&nbsp;Enter your username" maxlength="40">
       <div class="message" id="userError"></div>
 			</div>
 			<div class="formBox">
 				<label for="email">E-mail</label>			
-				<input id="email" type="text" name="email" placeholder="&nbsp;Enter your e-mail" maxlength="40">
+				<input id="txtEmail" type="text" name="email" placeholder="&nbsp;Enter your e-mail" maxlength="40">
         <div class="message" id="emailError"></div>
       </div>
 			<div class="formBox">
 				<label for="password">Password</label>
-				<input id="password" type="password" name="password" placeholder="&nbsp;Enter the password" maxlength="40">
+				<input id="txtPassword" type="password" name="password" placeholder="&nbsp;Enter the password" maxlength="40">
         <div class="message" id="passwordError"></div>
 			</div>
 			<div class="formBox">
 				<label for="confirmp">Confirm Password</label>
-				<input id="confirmp" type="password" name="confirm" placeholder="&nbsp;Confirm the password" maxlength="40">
+				<input id="txtConfirm" type="password" name="confirm" placeholder="&nbsp;Confirm the password" maxlength="40">
         <div class="message" id="confirmError"></div>
 			</div>
 			<div class="formBox">
