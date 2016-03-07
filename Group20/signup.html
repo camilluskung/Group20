@@ -81,7 +81,7 @@
       
       function warnPasswordInvalid(id) {
         if (!testPasswordValid(id)) {
-        $("passwordError").innerHTML="*Please enter password (must be 6 characters and include an UPPERCASE, lowercase and a digit*"; 
+        $("passwordError").innerHTML="*Please enter password (must be 6 characters and include an UPPERCASE, lowercase and a digit)*"; 
         return false;
         } else {
         $("passwordError").innerHTML="";
@@ -268,7 +268,7 @@
 			</div>
 			<div class="formBox">
 				<label for="email">E-mail</label>			
-				<input id="txtEmail" type="text" name="email" placeholder="&nbsp;Enter your e-mail" maxlength="40">
+				<input id="txtEmail" type="text" name="email" placeholder="&nbsp;Enter your e-mail">
         <div class="message" id="emailError"></div>
       </div>
 			<div class="formBox">
