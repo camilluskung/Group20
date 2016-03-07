@@ -81,11 +81,11 @@
 		<div class="board" id="OP">
 			<!-- Reply button (top) -->
 			<div class="reply">
-				<div class="replybutton">
 				<a href="#replybody">
+				<div class="replybutton">
 					reply to thread
-				</a>
 				</div>
+				</a>
 			</div>
 			<!-- Post -->
 			<div class="post">
@@ -124,15 +124,15 @@
 				<div class="replybutton">
 					reply to thread
 				</div>
-				<!-- Reply text area -->
-				<div class="replybody" id="replybody">
-					<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" id="replyform" 
-						onSubmit="return validatePost()">
-						<textarea form="replyform" name="taBody" id="taBody" placeholder="write your reply here..."></textarea>
-						<div class=message id="errMsgBody"></div>
-						<input type="submit" value="post quick reply">
-					</form>
-				</div>
+			</div>
+			<!-- Reply text area -->
+			<div class="replybody" id="replybody">
+				<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" id="replyform" 
+					onSubmit="return validatePost()">
+					<textarea form="replyform" name="taBody" id="taBody" placeholder="write your reply here..."></textarea>
+					<div class=message id="errMsgBody"></div>
+					<input type="submit" value="post quick reply">
+				</form>
 			</div>
 		</div>
 	</div>

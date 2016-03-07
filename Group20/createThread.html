@@ -16,19 +16,19 @@
 			return element;
 		}
 
-		function testSubjectValid(id) {
+		function testTopicValid(id) {
 			var str = $(id).value.trim();
 			return (str.length > 0);
 		}
 
-		function warnSubjectInvalid(id) {
-			if (!testSubjectValid(id)) {
-				if ($("errMsgSubject").innerHTML.length == 0)
-					$("errMsgSubject").innerHTML = "Thread subject cannot be empty";
+		function warnTopicInvalid(id) {
+			if (!testTopicValid(id)) {
+				if ($("errMsgTopic").innerHTML.length == 0)
+					$("errMsgTopic").innerHTML = "Thread topic cannot be empty";
 				return false;
 			} else {
-				if ($("errMsgSubject").innerHTML.length > 0)
-					$("errMsgSubject").innerHTML = "";
+				if ($("errMsgTopic").innerHTML.length > 0)
+					$("errMsgTopic").innerHTML = "";
 				return true;
 			}
 		}
@@ -51,17 +51,9 @@
 		}
 
 		function validateThread() {
-			var valid = false;
-			var valid2 = false;
-			if (warnSubjectInvalid("txtSubject"))
-				valid = true;
-			else
-				valid = false;
-			if (warnBodyInvalid("taBody"))
-				valid2 = true;
-			else
-				valid2 = false;
-			return valid&&valid2;
+			var isValidTopic = warnTopicInvalid("txtTopic");
+			var isValidBody = warnBodyInvalid("taBody");
+			return isValidTopic&&isValidBody;
 		}
 	</script>
 </head>
@@ -102,16 +94,16 @@
 	<div class="container" id="start">
 	<!-- Bread Crumb -->
 		<div class="breadcrumb">
-			<h1><a href="board.html#start">Board</a> > <span class="currentpage">Post New Thread</span></h1>
+			<h1><a href="board.html#start">Board</a> > <span class="currentPage">Post New Thread</span></h1>
 		</div>
 		<!-- New thread text area-->
-		<div class=createthread>
-			<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" id="threadform" 
+		<div class=createThread>
+			<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" id="threadForm" 
 				onSubmit="return validateThread()">
-				<label for="txtSubject">Subject</label>
-				<input type="text" name="txtSubject" id="txtSubject">
-				<div class="message" id="errMsgSubject"></div>
-				<textarea form="threadform" name="taBody" id="taBody" placeholder="write your post here..."></textarea>
+				<label for="txtTopic">Topic</label>
+				<input type="text" name="txtTopic" id="txtTopic">
+				<div class="message" id="errMsgTopic"></div>
+				<textarea form="threadForm" name="taBody" id="taBody" placeholder="write your post here..."></textarea>
 				<div class="message" id="errMsgBody"></div>
 				<input type="submit" value="Submit new thread">
 			</form>

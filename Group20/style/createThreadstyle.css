@@ -20,35 +20,35 @@ h1 {
 	font-weight: bold;
 	font-size: 18px;
 }
-.currentpage {
+.currentPage {
 	font-size: 22px;
 }
 
 /*
 	create thread body
 */
-.createthread {
+.createThread {
 	border: thin solid black;
 	padding: 20px;
 	margin: 20px 0;
 }
-.createthread label {
+.createThread label {
 	display: block;
 }
-.createthread input[type=text] {
+.createThread input[type=text] {
 	display: block;
 	width: 100%;
 
 	padding: 5px 5px;
 }
-.createthread textarea {
+.createThread textarea {
 	padding: 5px 5px;
 	display: block;
-	margin: 15px 0;
+	margin-top: 15px;
 	width: 100%;
 	height: 300px;
 }
-.createthread input[type=submit] {
+.createThread input[type=submit] {
 	border: none;
 	background-color: #4caf50;
 	color: white;
@@ -56,4 +56,8 @@ h1 {
     text-decoration: none;
     cursor: pointer;
     display: block;
+    margin-top: 15px;
+}
+.createThread .message {
+	color: red;
 }

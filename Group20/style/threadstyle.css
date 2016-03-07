@@ -33,20 +33,20 @@ h1 {
 	background-color: white;
 	padding-left: 0;
 	height: 50%;
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 /*
 	reply button
 */
 .reply {
 	margin: 20px;
+	width: 150px;
 }
 .reply a{
 	text-decoration: none;
 }
 .replybutton {
 	font-weight: bold;
-	width: 130px;
 	padding: 5px 10px;
 	text-align: center;
 	background-color: yellow;
@@ -55,12 +55,15 @@ h1 {
 /*
 	reply body
 */
+.replybody {
+	margin: 20px;
+}
 .replybody textarea {
 	display: block;
 	width: 100%;
 	height: 150px;
 	padding: 5px 5px;
-	margin: 15px 0;
+	margin-top: 15px;
 }
 .replybody input[type=submit] {
 	border: none;
@@ -69,6 +72,10 @@ h1 {
 	padding: 16px 32px;
     text-decoration: none;
     cursor: pointer;
+    margin-top: 15px;
+}
+.replybody .message {
+	color: red;
 }
 
 /*
