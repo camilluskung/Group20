@@ -49,7 +49,7 @@
               echo '<li><a href=#>'.$_SESSION["SESS_FIRST_NAME"].'</a></li><li><a href="forum/logout.php"><span class="glyphicon glyphicon-log-out"> Logout</span></a></li>';
               }
               else if($_SESSION['logged']==false) 
-                echo '<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li><li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
+                echo '<li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li><li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
             ?>
           </ul>
         </div>
