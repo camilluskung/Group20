@@ -42,7 +42,6 @@
             <li><a href="contactus.html">Contact Us</a></li>
           </ul> 
           <ul class="nav navbar-nav navbar-right nav-pills">
-            <!-- <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
             <?php
             session_start();
             if($_SESSION['logged']==true) {

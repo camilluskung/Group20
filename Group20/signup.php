@@ -83,7 +83,7 @@
       
       function warnPasswordInvalid(id) {
         if (!testPasswordValid(id)) {
-        $("passwordError").innerHTML="*Please enter password (must be 6 characters and include an UPPERCASE, lowercase and a digit)*"; 
+        $("passwordError").innerHTML="*Please enter password (must be 6 characters and include an </br>UPPERCASE, lowercase and a digit)*"; 
         return false;
         } else {
         $("passwordError").innerHTML="";
@@ -198,42 +198,40 @@
 	</div>
 	<!-- Main content wrapper -->
 	<div class="belowbox">
-	<!-- Right: text forms  -->
-	<div class="innerformright">
 		<form name="signUpForm" class="form-inline" action="forum/register.php" onsubmit="return validateForm()" method="post" >
 			<table>
       <div class="form-group">
         <tr>
-				<td class="category"><label class="control-label" for="firstName">First Name</label></td>
-				<td><input id="txtFirstName" class="form-control" type="text" name="fname" placeholder="Enter your first name" maxlength="40">
+        <td class="category"><label class="control-label" for="firstName">First Name</label></td>
+				<td><input id="txtFirstName" class="form-control" type="text" name="fname" placeholder="Enter your first name" maxlength="40" size="40">
         <div class="message" id="firstNameError"></div></td> 
-      </div>
+        </div>
         </tr>
 			<div class="form-group">
         <tr>
 				<td class="category"><label class="control-label" for="lastName">Last Name</label></td>
-				<td><input id="txtLastName" class="form-control" type="text" name="lname" placeholder="Enter your last name" maxlength="40">
+				<td><input id="txtLastName" class="form-control" type="text" name="lname" placeholder="Enter your last name" maxlength="40" size="40">
       <div class="message" id="lastNameError"></div></td>
 			</div>
         </tr>
 			<div class="form-group">
         <tr>
 				<td class="category"><label class="control-label" for="email">E-mail</label></td>		
-				<td><input id="txtEmail" class="form-control" type="text" name="login" placeholder="Enter your e-mail">
+				<td><input id="txtEmail" class="form-control" type="text" name="login" placeholder="Enter your e-mail" size="40">
         <div class="message" id="emailError"></div></td>
       </div>
         </tr>
 			<div class="form-group">
         <tr>
 				<td class="category"><label class="control-label" for="password">Password</label></td>
-				<td><input id="txtPassword" class="form-control" type="password" name="password" placeholder="Enter the password" maxlength="40">
+				<td><input id="txtPassword" class="form-control" type="password" name="password" placeholder="Enter the password" maxlength="40" size="40">
         <div class="message" id="passwordError"></div></td>
 			</div>
         </tr>
 			<div class="form-group">
         <tr>
 				<td class="category"><label class="control-label" for="pconfirm">Confirm Password</label></td>
-				<td><input id="txtConfirm" class="form-control" type="password" name="cpassword" placeholder="Confirm the password" maxlength="40">
+				<td><input id="txtConfirm" class="form-control" type="password" name="cpassword" placeholder="Confirm the password" maxlength="40" size="40">
         <div class="message" id="confirmError"></div></td>
       </div>
         </tr>
@@ -246,7 +244,6 @@
       </div>
       </table>
 		</form>
-	   </div>
         </div>
 </main>
 
