@@ -80,7 +80,7 @@
       </div>
       <div class="photo3">
         <div class="col-md-4 column3">
-          <div class="center-block images"><img src=images/grouse.jpg alt="grouse" width="80%" height=""></div>
+          <div class="center-block images"><img src=images/granville_street.jpg alt="grouse" width="80%" height=""></div>
           <h1 class="section">SECTION C</h1>
           <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
