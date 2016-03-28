@@ -42,15 +42,8 @@
             <li><a href="contactus.html">Contact Us</a></li>
           </ul> 
           <ul class="nav navbar-nav navbar-right nav-pills">
-            <!-- <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
-            <?php
-            session_start();
-            if($_SESSION['logged']==true) {
-              echo '<li><a href=#>'.$_SESSION["SESS_FIRST_NAME"].'</a></li><li><a href="forum/logout.php"><span class="glyphicon glyphicon-log-out"> Logout</span></a></li>';
-              }
-              else if($_SESSION['logged']==false) 
-                echo '<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li><li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
-            ?>
+            <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
           </ul>
         </div>
       </div>
@@ -94,7 +87,7 @@
   	<div class="mainFooter">
   		<div class="container-fluid">
   			<div class="row">
-  				<div class="col-sm-offset-1 col-sm-5">
+  				<div class="col-sm-6">
   					<div class="footerWidget">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   						  
