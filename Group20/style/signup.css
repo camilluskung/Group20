@@ -1,37 +1,25 @@
 /* Labels of the text forms */
 label {
 width: 150px;
-float: left;
 text-align: left;
-display: block
-}
-/* "Submit" button */
-#submit {
-	width: 300px;
-	margin-left: 150px;
-	background: #FF9900;
-	border: thin solid #FF9901;
+display: block;
 }
 
-
-/* The content box above the text form */
-.toptitle {
-	margin-top: 0;
-	padding-top: 0;
-	border-bottom: solid gray;
-	margin-bottom: 20px;
+.category {
+padding-bottom: 10px;
 }
-/* The title of the page "Sign Up"*/
+
+ /*The title of the page "Sign Up"*/
 .toptitle h1 {
 	color: #92aac3;
-    font-weight: 600;
-    font-size: 1.90em;
+  font-weight: 600;
+  font-size: 1.90em;
 	letter-spacing: 4px;
 	text-transform:uppercase;
-	border-bottom: solid gray;
 	padding-bottom: 10px;
 	padding-top: 0;
 	}
+
 
 /* Inner heading below title */
 .toptitle h2 {
@@ -41,8 +29,7 @@ display: block
 }
 
 .belowbox {
-	border-bottom: solid gray;
-	height: 350px;
+	height: 400px;
 	margin-bottom: 20px;
 }
 
@@ -53,32 +40,17 @@ display: block
 	margin-top: 20px;
 }
 
-/* The form container */
-.innerformright {
-	margin-top: 20px;
-	width: 600px;
-	float: right;
-	}
-
-/* The input box of the text form */
-.form1 input {
-	width: 300px;
-	color: black;
-	background: white;
-	border: thin solid black;
-}
 
 /* Validation for form */
 .message {
   color: red;
   font-size: 10px;
   padding-top: 5px;
-  padding-left: 150px;
+  padding-bottom: 5px;
 }
 
-.formBox {
-  margin-bottom: 10px;
+table {
+  margin-right: auto;
+  margin-left: auto;
 }
-
-
 
