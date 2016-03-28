@@ -163,11 +163,11 @@
         <div class="collapse navbar-collapse" id="mainmenu">
           <ul class="nav navbar-nav nav-pills">
             <li><a href="index.php">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="board.html">Board</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="about.php">About Us</a></li>
+            <li><a href="resources.php">Resources</a></li>
+            <li><a href="faq.php">FAQ</a></li>
+            <li><a href="board.php">Board</a></li>
+            <li><a href="contactus.php">Contact Us</a></li>
           </ul> 
           <ul class="nav navbar-nav navbar-right nav-pills">
             <!-- <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
@@ -177,7 +177,7 @@
               echo '<li><a href=#>'.$_SESSION["SESS_FIRST_NAME"].'</a></li><li><a href="forum/logout.php"><span class="glyphicon glyphicon-log-out"> Logout</span></a></li>';
               }
               else if($_SESSION['logged']==false) 
-                echo '<li class="active"><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li><li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
+                echo '<li class="active"><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li><li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
             ?>
           </ul>
         </div>
