@@ -93,11 +93,16 @@
 <!-- Content -->
 	<div class="container" id="start">
 	<!-- Bread Crumb -->
-		<div class="breadcrumb">
-			<h1><a href="board.html#start">Board</a> > <span class="currentPage">Post New Thread</span></h1>
-		</div>
+		<ul class="breadcrumb">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="board.html#start">Board</a></li>
+			<li class="active">Create New Thread</li>
+		</ul>
+
+		<h1>Create New Thread</h1>
+
 		<!-- New thread text area-->
-		<div class=createThread>
+		<div class="row createThread">
 			<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" id="threadForm" 
 				onSubmit="return validateThread()">
 				<label for="txtTopic">Topic</label>
@@ -105,7 +110,7 @@
 				<div class="message" id="errMsgTopic"></div>
 				<textarea form="threadForm" name="taBody" id="taBody" placeholder="write your post here..."></textarea>
 				<div class="message" id="errMsgBody"></div>
-				<input type="submit" value="Submit new thread">
+				<input type="submit" class="btn btn-success" value="Submit new thread">
 			</form>
 		</div>
 	</div>

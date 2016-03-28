@@ -5,19 +5,12 @@
 <head>
     <meta charset="utf-8">
     <title>CondoHub</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
-    
     <link rel="stylesheet" type="text/css" href="style/base.css">
-	
-	  <link rel="stylesheet" type="text/css" href="style/login.css">
-
+	<link rel="stylesheet" type="text/css" href="style/login.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
     <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-	
 	<script>
 	function validateLoginForm() {
         var usernameRegex = /^[0-9a-zA-Z\-_]+$/;
@@ -67,10 +60,10 @@
 <!-- Left column: text forms for username and password -->
 <div class="leftcol">
 <!-- Text form labels and text fields -->
-<form name="loginform" class="form1" onsubmit="return validateLoginForm()" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+<form name="loginform" class="form1" onsubmit="return validateLoginForm2()" action="forum/login.php" method="post">
 			<div class="usernamediv">
-				<label for="username">Username</label>&nbsp;
-				<br><input id="username" type="text" name="username" placeholder="&nbsp;Username" maxlength="40">
+				<label for="username">email</label>&nbsp;
+				<br><input id="username" type="text" name="login" placeholder="&nbsp;email" maxlength="40">
 				<br><span id="errorUName"></span>
 			</div>
 			<div class="passworddiv">

@@ -81,7 +81,7 @@
       
       function warnPasswordInvalid(id) {
         if (!testPasswordValid(id)) {
-        $("passwordError").innerHTML="*Please enter password (must be 6 characters and include an UPPERCASE, lowercase and a digit)*"; 
+        $("passwordError").innerHTML="*Please enter password (must be 6 characters and include an UPPERCASE, lowercase and a digit*"; 
         return false;
         } else {
         $("passwordError").innerHTML="";
@@ -255,20 +255,20 @@
 		</div>
 	<!-- Right: text forms  -->
 	<div class="innerformright">
-		<form name="signUpForm" class="form1" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateForm()" method="post" >
+		<form name="signUpForm" class="form1" action="forum/register.php" onsubmit="return validateForm()" method="post" >
 			<div class="formBox">
-				<label for="name">Name</label>
-				<input id="txtName" type="text" name="name" placeholder="&nbsp;Enter your name" maxlength="40">
+				<label for="name">First Name</label>
+				<input id="txtName" type="text" name="fname" placeholder="&nbsp;Enter your first name" maxlength="40">
         <div class="message" id="nameError"></div> 
       </div>
 			<div class="formBox">
-				<label for="username">Username</label>
-				<input id="txtUserName" type="text" name="userName" placeholder="&nbsp;Enter your username" maxlength="40">
+				<label for="username">Last Name</label>
+				<input id="txtUserName" type="text" name="lname" placeholder="&nbsp;Enter your last name" maxlength="40">
       <div class="message" id="userError"></div>
 			</div>
 			<div class="formBox">
 				<label for="email">E-mail</label>			
-				<input id="txtEmail" type="text" name="email" placeholder="&nbsp;Enter your e-mail">
+				<input id="txtEmail" type="text" name="login" placeholder="&nbsp;Enter your e-mail" maxlength="40">
         <div class="message" id="emailError"></div>
       </div>
 			<div class="formBox">
@@ -278,7 +278,7 @@
 			</div>
 			<div class="formBox">
 				<label for="confirmp">Confirm Password</label>
-				<input id="txtConfirm" type="password" name="confirm" placeholder="&nbsp;Confirm the password" maxlength="40">
+				<input id="txtConfirm" type="password" name="cpassword" placeholder="&nbsp;Confirm the password" maxlength="40">
         <div class="message" id="confirmError"></div>
 			</div>
 			<div class="formBox">

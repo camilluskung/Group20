@@ -1,81 +1,46 @@
 /* HOMEPAGE- resources */
-
- /*resource section1*/
-.para1
-{
-	border-bottom: thin solid gray;
-	display: inline-block;
-	margin-left: 20px;
-	margin-right: 100px;
-	padding-bottom: 30px;
-}
-/*paragraph under title heading*/
-.para1_1
-{
-	display: inline-block;
-	margin-left: 20px;
-	margin-right: 100px;
-	padding-bottom: 30px;
-}
-/*link to another page*/
-.seemore1
-{
-	margin-left: 1000px;
+body {	
+	font-family: "Arial", Gadget, sans-serif;
 }
 /*title heading*/
-.resources
+.heading {
+	//margin-bottom: 50px;
+}
+h1
 {
-	display: inline-block;
-	font-family: "Arial Black", Gadget, sans-serif;
-	font-size: 70px;
-	margin-bottom: 20px;
-	margin-left: 20px;
-	margin-top: 20px;
+	/*font-family: "Arial Black", Gadget, sans-serif;*/
+	/*font-size: 72px;
+	margin: 20px;*/
 }
 
-/*title of section1*/
-.section1
+/*individual resource*/
+.section
+{
+	margin: 50px 0;
+}
+/*resource title*/
+.sectionTitle
 {
 	color: #6699ff;
-	display: inline-block;
-	font-family: "Arial", Gadget, sans-serif;
 	margin-left: 20px;
-	padding: auto;
 }
-/*title of section2*/
-.section2
+ /*resource body*/
+.sectionBody
 {
-	color: #6699ff;
-	display: inline-block;
-	font-family: "Arial", Gadget, sans-serif;
 	margin-left: 20px;
-	padding: auto;
 }
-/*title of section3 */
-.section3
+/*link to detail page*/
+.seemore
 {
-	color: #6699ff;
-	display: inline-block;
-	font-family: "Arial", Gadget, sans-serif;
-	margin-left: 20px;
-	padding: auto;
-}
-/*see more title*/
-.see_more
-{
-	display: inline-block;
-	font-family: "Arial Black", Gadget, sans-serif;
-	font-size: 70px;
-	margin-bottom: 20px;
-	margin-left: 20px;
-	margin-top: 20px;
+	/*border: thin solid black;*/
+	float: right;
+	margin-right: 20px;
 }
 
-/*this is a paragraph on see more page*/
-.para_seemore
+/*divider*/
+hr
 {
-	display: inline-block;
-	margin-left: 20px;
-	margin-right: 100px;
-	padding-bottom: 30px;
+	border-width: 1px;
+	border-color: black;
+	margin: 0;
 }

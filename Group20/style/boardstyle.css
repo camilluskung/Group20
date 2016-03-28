@@ -1,24 +1,20 @@
 /*
 	default body content
 */
-body {
-	font-family: "Ubuntu";
-}
 
-p {
-	margin: 0;
+body {
+	/*font-family: "Ubuntu";*/
 }
 
 /*
 	Bread crumbs
 */
-.breadcrumb {
+/*.breadcrumb {
 	font-weight: bold;
 	padding: 0;
 	font-size: 18px;
 	margin: 20px 0;
 	background-color: white;
-	/*border: thin solid blue;*/
 }
 h1 {	
 	font-weight: bold;
@@ -26,63 +22,45 @@ h1 {
 }
 .currentpage {
 	font-size: 22px;
-}
+}*/
 
 /*
 	create thread button
 */
-.createThread {
-	width: 150px;
-}
-
-.createThread a{
-	text-decoration: none;
-}
-.createthreadbutton {
-	font-weight: bold;
-	text-align: center;
-	background-color: yellow;
-	padding: 5px 10px;
+#btnCreateThread {
+	//background-color: yellow;
+	//margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 /*
 	board(forum) body
 */
-
-.board {
-	border: thin solid black;
-	border-collapse: collapse;
-	width: 100%;
-	margin: 20px 0;
-	/*font-weight: bold;*/
-
+.table>tbody>tr>td {
+	vertical-align: middle
 }
 
-.tableHeader th {
-	padding: 5px 10px;
-	border-bottom: thin solid black;
+.number {
+	width: 5%;
 }
 
 .topic {
 	width: 70%;
-	padding: 5px 10px;
-	font-size: 20px;
 }
 
 .view {
-	width: 15%;
-	padding: 5px 10px;
+	width: 10%;
 }
 
 .date {
 	width: 15%;
-	padding: 5px 10px;
-}
-
-.thread:nth-child(odd) {
-	background-color: #eef0f0;
 }
 
 .topic a {
 	text-decoration: none;
+}
+
+#paginationBoard {
+	float: right;
+	margin: 0;
 }

@@ -4,22 +4,22 @@
 .googlemap
 {border: thick solid gray;
 	display: inline-block;
-	margin-left: 100px;
-	margin-right: 100px;
+/*	margin-left: 100px;
+	margin-right: 100px;*/
 }
 /*title heading*/
-h1
+/*h1
 { margin-left: 100px;
   text-align: center;
 	color: #92aac3;
   font-weight: 600;
   font-size: 40px;
   letter-spacing: 4px;
-  text-transform:uppercase;}
+  text-transform:uppercase;}*/
 
 /*contact info on the right side */
-.contactInfo {padding-left: 200px;
-              padding-top: 100px;}
+/*.contactInfo {padding-left: 200px;
+              padding-top: 100px;}*/
 
 .contactInfo h2 {text-transform:uppercase;
               color: #92aac3;

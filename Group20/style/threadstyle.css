@@ -2,13 +2,13 @@
 	default body content
 */
 body {
-	font-family: "Ubuntu";
+	/*font-family: "Ubuntu";*/
 }
 
 /*
 	Bread crumbs
 */
-.breadcrumb {
+/*.breadcrumb {
 	padding: 0;
 	margin: 20px 0;
 	background-color: white;
@@ -22,86 +22,28 @@ h1 {
 }
 .currentpage {
 	font-size: 22px;
-}
-
-/*
-	Thread body
-*/
-.board {
-	margin: 20px 0;
-	border: thin solid black;
-	background-color: white;
-	padding-left: 0;
-	height: 50%;
-	/*font-weight: bold;*/
-}
-/*
-	reply button
-*/
-.reply {
-	margin: 20px;
-	width: 150px;
-}
-.reply a{
-	text-decoration: none;
-}
-.replybutton {
-	font-weight: bold;
-	padding: 5px 10px;
-	text-align: center;
-	background-color: yellow;
-}
-
-/*
-	reply body
-*/
-.replybody {
-	margin: 20px;
-}
-.replybody textarea {
-	display: block;
-	width: 100%;
-	height: 150px;
-	padding: 5px 5px;
-	margin-top: 15px;
-}
-.replybody input[type=submit] {
-	border: none;
-	background-color: #4caf50;
-	color: white;
-	padding: 16px 32px;
-    text-decoration: none;
-    cursor: pointer;
-    margin-top: 15px;
-}
-.replybody .message {
-	color: red;
-}
+}*/
 
 /*
 	post 
 */
 .post {
-	margin: 20px;
+	margin: 20px 0;
 	padding: 0;
-	border: thin solid black;
-	background-color: white;
+	background-color: #f5f5f5;
 }
 .userinfo {
-	margin: 15px;
-	margin-top: 25px;
+	margin: 20px 0;
+	/*width: 170px;*/
+}
+.username {
 	padding: 10px;
-	float: left;
 	background-color: #4C8FFB;
-	width: 170px;
 	text-align: center;
 	font-weight: bold;
 }
 .postbody {
-	padding-left : 200px;
-	padding-right: 10px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	margin: 20px 0;
 }
 .postbody p {
 	font-size: 15px;
@@ -112,4 +54,23 @@ h2 {
 	padding: 0;
 	margin: 0;
 	margin-bottom: 10px;
+}
+
+/*
+	reply post
+*/
+#currentUser {
+	background-color: yellow;
+}
+#replybody textarea {
+	display: block;
+	width: 100%;
+	height: 150px;
+}
+#replybody input[type=submit] {
+	float: right;
+    margin-top: 15px;
+}
+#replybody .message {
+	color: red;
 }

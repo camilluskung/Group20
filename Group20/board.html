@@ -45,71 +45,119 @@
 	</div>
 	
 <!-- Content -->
-	<div class="container" id="start">
 	<!-- Bread Crumb -->
-		<div class="breadcrumb">
-			<h1><span class="currentpage">Board</span></h1>
-		</div>
-		<!-- Create thread button -->
-		<div class="createThread">
-			<a href="createThread.html#start">
-			<div class="createthreadbutton">
-				post new thread
-			</div>
-			</a>
-		</div>
-		<!-- Board -->
-
-		<table class="board">
-			<tr class="tableHeader">
-				<th>Topic</th>
-				<th>View</th>
-				<th>Date</th>
-			</tr>
-			<tr class="thread">
-				<td class="topic"><a href="thread.html#start">
-				Milestone 4 is due on Monday 8:30am.
-				</a></td>
-				<td class="view">0 / 1</td>
-				<td class="date">
-					<p>Waylon Ching<br>
-					03-01-2016, 12:59 PM</p>
-				</td>
-			</tr>
-			<tr class="thread">
-				<td class="topic"><a href="thread.html#start">
-				OH NO! Midterms are back!!
-				</a></td>
-				<td class="view">0 / 1</td>
-				<td class="date">
-					<p>Waylon Ching<br>
-					03-01-2016, 12:59 PM</p>
-				</td>
-			</tr>
-			<tr class="thread">
-				<td class="topic"><a href="thread.html#start">
-				IMPORTANT!! Drinking party has been postponed to spring break.
-				</a></td>
-				<td class="view">0 / 1</td>
-				<td class="date">
-					<p>Waylon Ching<br>
-					03-01-2016, 12:59 PM</p>
-				</td>
-			</tr>
-			<tr class="thread">
-				<td class="topic"><a href="thread.html#start">
-				topic 4
-				</a></td>
-				<td class="view">0 / 1</td>
-				<td class="date">
-					<p>[admin]<br>
-					03-01-2016, 12:59 PM</p>
-				</td>
-			</tr>
+		<ul class="breadcrumb row">
+			<li><a href="index.html">Home</a></li>
+			<li class="active">Board</li>
+		</ul>
+		<h1>Board</h1>
+	<div class="container" id="start">
+		<!-- Create thread button (top)-->
+		<a href="createThread.html#start" class="btn btn-primary" id="btnCreateThread" role="button">Start a new thread</a>
+		<ul class="pagination" id="paginationBoard">
+			<li class="active"><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+		</ul>
+		<div class="table-responsive" id="board">
+		<!--
+		<table class="table table-hover table-bordered table-striped">
+		-->
+		<table class="table table-hover table-bordered">
+			<thead>
+				<tr>
+					<th class="number">#</th>
+					<th class="topic">Topic</th>
+					<th class="view">View</th>
+					<th class="date">Date</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="number">1</td>
+					<td class="topic"><a href="thread.html#start">topic 1</a></td>
+					<td class="view">6 / 1000</td>
+					<td class="date">Last Poster <br>
+					03-01-2016, 12:59 PM</td>
+				</tr>
+				<tr>
+					<td class="number">2</td>
+					<td class="topic"><a href="thread.html#start">topic 2</a></td>
+					<td class="view">6 / 1000</td>
+					<td class="date">Last Poster <br>
+					03-01-2016, 12:59 PM</td>
+				</tr>
+				<tr>
+					<td class="number">3</td>
+					<td class="topic"><a href="thread.html#start">topic 3</a></td>
+					<td class="view">6 / 1000</td>
+					<td class="date">Last Poster <br>
+					03-01-2016, 12:59 PM</td>
+				</tr>
+				<tr>
+					<td class="number">4</td>
+					<td class="topic"><a href="thread.html#start">topic 4</a></td>
+					<td class="view">6 / 1000</td>
+					<td class="date">Last Poster <br>
+					03-01-2016, 12:59 PM</td>
+				</tr>
+				<tr>
+					<td class="number">5</td>
+					<td class="topic"><a href="thread.html#start">topic 5</a></td>
+					<td class="view">6 / 1000</td>
+					<td class="date">Last Poster <br>
+					03-01-2016, 12:59 PM</td>
+				</tr>
+				<tr>
+					<td class="number">6</td>
+					<td class="topic"><a href="thread.html#start">topic 6</a></td>
+					<td class="view">6 / 1000</td>
+					<td class="date">Last Poster <br>
+					03-01-2016, 12:59 PM</td>
+				</tr>
+				<tr>
+					<td class="number">7</td>
+					<td class="topic"><a href="thread.html#start">topic 7</a></td>
+					<td class="view">6 / 1000</td>
+					<td class="date">Last Poster <br>
+					03-01-2016, 12:59 PM</td>
+				</tr>
+				<tr>
+					<td class="number">8</td>
+					<td class="topic"><a href="thread.html#start">topic 8</a></td>
+					<td class="view">6 / 1000</td>
+					<td class="date">Last Poster <br>
+					03-01-2016, 12:59 PM</td>
+				</tr>
+				<tr>
+					<td class="number">9</td>
+					<td class="topic"><a href="thread.html#start">topic 9</a></td>
+					<td class="view">6 / 1000</td>
+					<td class="date">Last Poster <br>
+					03-01-2016, 12:59 PM</td>
+				</tr>
+				<tr>
+					<td class="number">10</td>
+					<td class="topic"><a href="thread.html#start">topic 10</a></td>
+					<td class="view">6 / 1000</td>
+					<td class="date">Last Poster <br>
+					03-01-2016, 12:59 PM</td>
+				</tr>
+			</tbody>
 		</table>
+		</div>
+		<!-- Create thread button (bottom)-->
+		<a href="createThread.html#start" class="btn btn-primary" id="btnCreateThread" role="button">Start a new thread</a>
+		<ul class="pagination" id="paginationBoard">
+			<li class="active"><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+		</ul>
 	</div>
-
-
 
 <!-- Footer -->
 	<footer class="footerWrapper">
