@@ -17,6 +17,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:900' rel='stylesheet' type='text/css'>
  
 </head>
   
@@ -68,10 +70,10 @@
   </header>
   
 <!-- Content -->
-  <div class="container">
+  <main class="container">
     <ul class="breadcrumb row">
-      <li><a href="index.html">Home</a></li>
-      <li class="active">About Usx</li>
+      <li><a href="index.php">Home</a></li>
+      <li class="active">About Us</li>
     </ul>
   <h1>ABOUT US</h1>
     <div class="row aboutcontent">
@@ -85,7 +87,7 @@
         <div class="col-md-6 aboutcolumn2"><img src=images/camillus.jpg alt="grouse" width="400" height="400"></div>
         </div>
       </div>
-      </div>
+    </main>
 
 <!-- Footer -->
 <footer class="footerWrapper">

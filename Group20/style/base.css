@@ -9,7 +9,7 @@ html {
 
 /* Body */
 
-.container-fluid {
+header .container-fluid {
   margin: 0 auto;
   padding:0;
   width: 100%;

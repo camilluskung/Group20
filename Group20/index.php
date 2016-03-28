@@ -62,7 +62,7 @@
   </header>
 
   <!-- Content -->
-  <main class="container-fluid">
+  <main class="container">
     <div class="row content1">
       <div class="photo1">
         <div class="col-md-4 column1">
