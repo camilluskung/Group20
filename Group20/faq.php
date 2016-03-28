@@ -81,6 +81,7 @@
             <h2>Question1</h2>
             
             <p>Because our website’s purpose is to provide information for a business, we decided to use a simple and minimalistic design. Our primary demographic of users are condo and townhouse owners of all age and gender, so we focussed on a design that was streamlined and accessible. We researched several different websites that contained similar content to ours and found that they focused on functionality and simplicity rather than being<br><br> aesthetically pleasing. We kept a uniform design for all our pages -- keeping the same layout for the navigation and banner, changing only the content to keep our website consistent.  The content will either be using a one column layout or a two column layout depending on how much </p>
+<!--
              <p class="button">
              <a href="faq1-more.html" class="btn btn-default"><i class="fa fa-picture-o">
                  
@@ -88,6 +89,7 @@
              &nbsp; Read more >>
              </a>
              </p>
+-->
              </div>
              
            <div class="row question2" id="faq2">
@@ -96,6 +98,7 @@
                 <h2>Question2</h2>
             
             <p>Because our website’s purpose is to provide information for a business, we decided to use a simple and minimalistic design. Our primary demographic of users are condo and townhouse owners of all age and gender, so we focussed on a design that was streamlined and accessible. We researched several different websites that contained similar content to ours and found that they focused on functionality and simplicity rather than being<br><br> aesthetically pleasing. We kept a uniform design for all our pages -- keeping the same layout for the navigation and banner, changing only the content to keep our website consistent.  The content will either be using a one column layout or a two column layout depending on how much </p>
+<!--
              <p class="button">
               <a href="faq2-more.html" class="btn btn-default"><i class="fa fa-picture-o">
                  
@@ -103,6 +106,7 @@
              &nbsp; Read more >>
              </a>
              </p>
+-->
              </div>
              
              <div class="row question3" id="faq3">
@@ -111,6 +115,7 @@
               <h2>Question3</h2>
             
             <p>Because our website’s purpose is to provide information for a business, we decided to use a simple and minimalistic design. Our primary demographic of users are condo and townhouse owners of all age and gender, so we focussed on a design that was streamlined and accessible. We researched several different websites that contained similar content to ours and found that they focused on functionality and simplicity rather than being<br><br> aesthetically pleasing. We kept a uniform design for all our pages -- keeping the same layout for the navigation and banner, changing only the content to keep our website consistent.  The content will either be using a one column layout or a two column layout depending on how much </p>
+<!--
               <p class="button">
               <a href="faq3-more.html" class="btn btn-default"><i class="fa fa-picture-o">
                  
@@ -118,6 +123,7 @@
              &nbsp; Read more >>
              </a>
              </p>
+-->
              </div>
              
                <div class="row question4" id="faq4">
@@ -125,6 +131,7 @@
               <h2>Question4</h2>
             
             <p>Because our website’s purpose is to provide information for a business, we decided to use a simple and minimalistic design. Our primary demographic of users are condo and townhouse owners of all age and gender, so we focussed on a design that was streamlined and accessible. We researched several different websites that contained similar content to ours and found that they focused on functionality and simplicity rather than being<br><br> aesthetically pleasing. We kept a uniform design for all our pages -- keeping the same layout for the navigation and banner, changing only the content to keep our website consistent.  The content will either be using a one column layout or a two column layout depending on how much </p>
+<!--
               <p class="button">
               <a href="faq4-more.html" class="btn btn-default"><i class="fa fa-picture-o">
                  
@@ -132,6 +139,7 @@
              &nbsp; Read more >>
              </a>
              </p>
+-->
              </div>
              
                <div class="row question5" id="faq5">
@@ -140,12 +148,14 @@
               <h2>Question5</h2>
             
             <p>Because our website’s purpose is to provide information for a business, we decided to use a simple and minimalistic design. Our primary demographic of users are condo and townhouse owners of all age and gender, so we focussed on a design that was streamlined and accessible. We researched several different websites that contained similar content to ours and found that they focused on functionality and simplicity rather than being<br><br> aesthetically pleasing. We kept a uniform design for all our pages -- keeping the same layout for the navigation and banner, changing only the content to keep our website consistent.  The content will either be using a one column layout or a two column layout depending on how much </p><br>
+<!--
               <p class="button">
               <a href="faq5-more.html" class="btn btn-default"><i class="fa fa-picture-o">
                  </i>
              &nbsp; Read more >>
              </a>
              </p>
+-->
              </div>
              
              <div>
