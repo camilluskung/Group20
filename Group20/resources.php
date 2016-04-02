@@ -7,35 +7,42 @@
 <main class="container">
     <div class="heading">
         <h1>RESOURCES</h1>
-        <p>A collection of useful documents and links.</p>
+        
+        <h3>A collection of useful documents and links.</h3>
     </div>
+    <hr>
     <div class="section">
+        
         <div class="sectionTitle">
-            <h2>Resource 1</h2>
+            <h2>BC Apartment Owners & Managers Association</h2>
         </div>
         <div class="sectionBody">
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-            <span class="seemore"><a href="seemorepage.php">see more</a></span>
+            <p>LandlordBC is BC’s top resource for owners and managers of rental housing. Not a member yet? Stay up to date on the latest developments in the rental housing industry by subscribing to our e-news updates. </p>
+            <span class="seemore"><a href="http://landlordbc.ca/">see more</a></span>
         </div>
     </div>
     <hr>
     <div class="section">
         <div class="sectionTitle">
-            <h2>Resource 2</h2>
+            <h2>Strata Property Agents of British Columbia</h2>
         </div>
         <div class="sectionBody">
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-            <span class="seemore"><a href="seemorepage.php">see more</a></span>
+            <p>The Strata Property Agents of British Columbia is an industry association developed to represent the interests and issues of the many strata management companies working throughout the province of BC. The association was established in 2000 and represents dozens of property management companies - specifically residential strata management companies - acting as "agents" for approximately 350,000 strata lot units</p>
+            <span class="seemore"><a href="http://www.spabc.org/">see more</a></span>
         </div>
     </div>
     <hr>
     <div class="section">
         <div class="sectionTitle">
-            <h2>Resource 3</h2>
+            <h2>Residential Tenancy Branch : Government of Briish Columbia</h2>
         </div>
         <div class="sectionBody">
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-            <span class="seemore"><a href="seemorepage.php">see more</a></span>
+           <p>Landlords and tenants are encouraged to use this site to understand their rights and responsibilities. </p>
+<p>
+Both tenants and landlords have specific rights and responsibilities in a tenancy. Make sure you’re renting the right way – access information and resources that will help you have a successful tenancy.  
+            </p>
+               <p>The Residential Tenancy Branch can also answer questions or provide dispute resolution services for problems that landlords and tenants can’t solve on their own.</p>
+            <span class="seemore"><a href="http://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies">see more</a></span>
         </div>
     </div>
 </main>

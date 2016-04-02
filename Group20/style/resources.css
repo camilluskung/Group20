@@ -4,14 +4,19 @@ body {
 }
 /*title heading*/
 .heading {
-	//margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
+    text-align: center;
+  font-weight: 400;
+  font-size: 1.00em;
+  letter-spacing: 4px;
+  text-transform:uppercase;
+  color: black;
+  padding: .75em;
+    margin-bottom: auto;
+    margin-top: 0px;
+    
 }
-h1
-{
-	/*font-family: "Arial Black", Gadget, sans-serif;*/
-	/*font-size: 72px;
-	margin: 20px;*/
-}
+
 
 /*individual resource*/
 .section
