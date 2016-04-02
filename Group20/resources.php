@@ -1,6 +1,7 @@
 <?php
   //header
   $css = "style/resources.css";
+  $page = "resources";
   include("header.php");
 ?>
 

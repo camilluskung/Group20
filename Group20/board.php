@@ -1,6 +1,7 @@
 <?php
   //header
   $css = "style/boardstyle.css";
+  $page = "board";
   include("header.php");
 ?>
 

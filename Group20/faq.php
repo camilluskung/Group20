@@ -1,6 +1,7 @@
 <?php
   //header
   $css = "style/faq.css";
+  $page = "faq";
   include("header.php");
 ?>
     <main class="container">

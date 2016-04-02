@@ -1,6 +1,7 @@
 <?php
   //header
   $css = "style/about.css";
+  $page = "about";
   include("header.php");
 ?>
   
