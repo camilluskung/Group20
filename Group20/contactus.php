@@ -1,6 +1,7 @@
 <?php
   //header
   $css = "style/contactusstyle.css";
+  $page = "contact";
   include("header.php");
 ?>
 
