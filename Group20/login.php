@@ -38,7 +38,7 @@
  <!-- Content --> 
  <main class="container-fluid">
 	<!-- Title Wrapper  -->
-	<div id="start" class="toptitle">
+	<div id="start">
 		<h1>Log In</h1>
 	</div>
 	<!-- Main content wrapper -->
