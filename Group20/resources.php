@@ -7,7 +7,9 @@
 
 <main class="container">
     <div class="heading">
+      <div id="start">
         <h1>RESOURCES</h1>
+      </div>
         
         <h3>A collection of useful documents and links.</h3>
     </div>

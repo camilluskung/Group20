@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<!-- Internal Details: title, stylesheets, scripts -->
-<head>
-    <meta charset="utf-8">
-    <title>CondoHub</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style/base.css">
-	<link rel="stylesheet" type="text/css" href="style/login.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-	<script>
-	function validateLoginForm() {
+<?php
+  //header
+  $css = "style/login2.css";
+  $page = "login";
+  include("header.php");
+?>    
+  <script>
+  function validateLoginForm() {
         //var usernameRegex = /^[0-9a-zA-Z\-_]+$/;
 		var emailRegex =/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		var usernameVal = document.forms["loginform"]["txtEmail"].value.match(emailRegex);
@@ -38,35 +31,24 @@
         else {
           return true;
         }
-      }
-    </script>
-</head>
+      }     
+  </script>
 
-<!-- Body -->  
-<body>
 
-<!-- Main Wrapper -->               
-<div class="container">
-
-<!-- Title box -->
-<div class="logobar">
-<h1>CondoHub</h1>
-<h2>Log In</h2>
-</div>
-
-<!-- Main content -->
-<div class="content">
-
-<!-- Left column: text forms for username and password -->
-<div class="leftcol">
-<!-- Text form labels and text fields -->
-<form name="loginform" class="form1" onsubmit="return validateLoginForm()" action="forum/login.php" method="post">
-
-       
-			<div class="form-group">
+ <!-- Content --> 
+ <main class="container-fluid">
+	<!-- Title Wrapper  -->
+	<div id="start" class="toptitle">
+		<h1>Log In</h1>
+	</div>
+	<!-- Main content wrapper -->
+	<div class="belowbox">
+		<form name="loginform" class="form1" onsubmit="return validateLoginForm()" action="forum/login.php" method="post">
+		<table>
+       <div class="form-group">
         <tr>
 				<td class="category"><label class="control-label" for="email">E-mail</label></td>		
-				<td><input id="txtEmail" class="form-control" type="text" name="login" placeholder="Enter your e-mail" size="40">
+				<td><input id="txtEmail" class="form-control" type="text" name="login" placeholder="Enter your e-mail" maxlength="40" size="40">
         <div class="message" id="emailError"></div></td>
       </div>
         </tr>
@@ -87,44 +69,13 @@
 		<a href=forgot.html>Forgot password</a></td>
         </tr>
       </div>
-      </table>
-			
-			
-			
-			
+      </table>		
 			</form>
-<a href="http://time.is/Vancouver" id="time_is_link" rel="nofollow" style="font-size:20px;color:white">Time in Vancouver:</a>
-<span id="Vancouver_z18c" style="font-size:20px;color:white"></span>
-<script src="http://widget.time.is/en_gb.js"></script>
-<script>
-time_is_widget.init({Vancouver_z18c:{template:"TIME<br>DATE", time_format:"12hours:minutesAMPM", date_format:"monthname dnum,year dayname"}});
-</script>
+        </div>
+</main>
 
-</div>
-
-<!-- Right Column: Logo -->
-<div class="rightcol">
-<!-- Logo -->
-<img src="images/logo.gif" width="350" alt="CondoHub">
-</div>
-</div>
-
-<!-- Bottom wrapper: Back and Sign Up reference -->
-<div class="bottom">
-<p>Not a member? <a href=signup.php>Sign up now.</a></p>
-<!-- <button id="back" onclick="goBack()">Go Back</button> -->
-<button class="btn btn-success" onclick="goBack()">Go Back</button>
-<script>
-function goBack() {
-    window.history.back();
-}
-</script>
-</div>
-</div>
-
-</body>
-
-
-
-
-</html>
+  
+<?php 
+  //footer
+  include("footer.php")
+?>

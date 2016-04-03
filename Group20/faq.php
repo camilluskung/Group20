@@ -12,10 +12,10 @@
          <div class="container-60">
          <div class="container2">
          <div class="row question1" id="faq1">
-            
+            <div id="start">
              
             <h2>Question1</h2>
-            
+            </div>
             <p>Because our website’s purpose is to provide information for a business, we decided to use a simple and minimalistic design. Our primary demographic of users are condo and townhouse owners of all age and gender, so we focussed on a design that was streamlined and accessible. We researched several different websites that contained similar content to ours and found that they focused on functionality and simplicity rather than being<br><br> aesthetically pleasing. We kept a uniform design for all our pages -- keeping the same layout for the navigation and banner, changing only the content to keep our website consistent.  The content will either be using a one column layout or a two column layout depending on how much </p>
 <!--
              <p class="button">

@@ -11,9 +11,11 @@
       <div class="photo1">
         <div class="col-md-3 column1">
           <div class="center-block images">
+            <div id="start">
             <a href="about.php">
               <img src=images/stanleypark.jpg alt="stanley park" width="100%" height="100%" onmouseover="this.src='images/stanleypark-hover.jpg'; this.style.cursor='pointer'" onmouseout="this.src='images/stanleypark.jpg'" onclick="about.php" style="cursor: pointer;">
             </a>
+            </div>
           </div>
           <br>
           <p class="paragraph">Find out a more about what we do and how we are here to help you.</p>

@@ -11,7 +11,9 @@
       <li><a href="index.php">Home</a></li>
       <li class="active">About Us</li>
     </ul>
+    <div id="start">
   <h1>ABOUT US</h1>
+    </div>
     <div class="row aboutcontent">
       <div class="aboutus">
         <div class="col-md-6 aboutcolumn1">

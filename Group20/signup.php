@@ -5,7 +5,7 @@
   include("header.php");
 ?>
     
-    <script>
+  <script>
    
    function $(id) {
 			  var element = document.getElementById(id);
@@ -127,7 +127,7 @@
  <!-- Content --> 
  <main class="container-fluid">
 	<!-- Title Wrapper  -->
-	<div id="start" class="toptitle">
+	<div id="start">
 		<h1>Sign Up</h1>
 	</div>
 	<!-- Main content wrapper -->

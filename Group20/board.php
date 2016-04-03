@@ -26,7 +26,9 @@
 			<li><a href="index.php">Home</a></li>
 			<li class="active">Board</li>
 		</ul>
+    <div id="start">
 		<h1>Board</h1>
+    </div>
 		<!-- Create thread button (top)-->
 		<a href="createThread.php#start" class="btn btn-primary" id="btnCreateThread" role="button">Start a new thread</a>
 		<!-- <ul class="pagination" id="paginationBoard">
