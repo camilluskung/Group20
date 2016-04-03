@@ -17,10 +17,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900' rel='stylesheet' type='text/css'>
+  
+    <script>
+	   $(document).ready(function (){$("#click").click(function (){$('html, body').animate({scrollTop: $("#start").offset().top}, 1000);});});
+    </script> 
 </head>
   
   <!-- Navigation -->
   <header class="banner">
+    <!-- <div id="wrapper"> -->
+    <div id="brand">
+      CON<br>DO<br>HUB
+    </div>
     <nav class="navbar">
       <div class="container-fluid">
         <div class="header">
@@ -35,6 +43,7 @@
           </a>
         </div>
         <div class="collapse navbar-collapse" id="mainmenu">
+          <ul class="pull-right">
           <ul class="nav navbar-nav nav-pills">
             <li class="<?php echo ($page == "home" ? "active" : "")?>"><a href="index.php">Home</a></li>
             <li class="<?php echo ($page == "about" ? "active" : "")?>"><a href="about.php">About Us</a></li>
@@ -53,13 +62,16 @@
                 echo '<li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li><li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
             ?>
           </ul>
+        </ul>
         </div>
       </div>
     </nav>
-    <!-- <div id="wrapper"> -->
-    <div id="brand">
-    CON<br>DO<br>HUB
-    </div>
-    <!-- </div> -->
+    
+<!-- Scroll down button -->
+	<div id="scroll-down">
+  <button type="button" id="click" class="btn btn-default btn-lg">
+	<span class="glyphicon glyphicon-menu-down"></span>
+	</button>
+	</div>
   </header>
   <body>

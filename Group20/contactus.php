@@ -6,8 +6,9 @@
 ?>
 
 <main class="container">
-    
-        <h1>Contact Us</h1> 
+  <div id="start">
+    <h1>Contact Us</h1> 
+  </div>
     
     <div class="row contactUs">
         <div class=col-md-6>

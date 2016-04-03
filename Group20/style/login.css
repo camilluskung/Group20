@@ -1,148 +1,56 @@
-/*General body CSS*/
-body {
-	background: #689ACA;
-	padding: 0;
-	margin: 0;
+/* Labels of the text forms */
+label {
+width: 150px;
+text-align: left;
+display: block;
 }
 
-/* The text form inputs*/
-input {
-	width: 300px;
-	height: 50px;
-	color: black;
-}
-/* Buttons to submit form and go back 
-button {
-	
-	width: 250px;
-	margin-left: 25px;
-	background: #FF9900;
-	border: thin solid #FF9900;
-	color: white;
-}
-*/
-/* The submit button css */
-#submit {
-	width: 140px;
-	height: 40px;
-	//background: #FF9900;
-	//border: thin solid #FF9900;
-	color: white;
+.category {
+padding-bottom: 10px;
 }
 
-/* Error message for name */
-#errorUName {
-	color: red;
-	font-weight: bold;
-	font-size: 11px;
-}
-
-/* Error message for password */
-#errorPassword {
-	color: red;
-	font-weight: 200;
-	font-size: 11px;
-}
-
-/* Input div */
-.usernamediv {
-	height: 95px;
-	padding-bottom: 0;
-}
-
-/* Password div */
-.passworddiv {
-	height: 112px;
-	padding-bottom: 0;
-}
-/* Submit div */
-.submitdiv {
-	margin-top:5px;
-}
-
-/* Main wrapper of content */
-.container {
-	width: 900px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-/* header section of content */
-.logobar {
-	padding: 0;
-	height: 100px;
-}
-
-/* Title heading */
-.logobar h1 {
-	margin-top: 0;
-	padding-top: 10px; 
-	margin-bottom:0;
-	font-size: 40px;
-	text-align: center;
-	font-weight: bold;
-	color: white;
+ /*The title of the page "Sign Up"*/
+.toptitle h1 {
+	color: #92aac3;
+  font-weight: 600;
+  font-size: 1.90em;
+	letter-spacing: 4px;
+	text-transform:uppercase;
+	padding-bottom: 10px;
+	padding-top: 0;
 	}
 
-/* Subheading of header */
-.logobar h2 {
-	margin-top: 0;
-	font-size: 20px;
-	text-align: center;
-	color: white;
-	margin-bottom: 0;
+
+/* Inner heading below title */
+.toptitle h2 {
+	margin-top: 10px;
+	font-size: 25px;
+	font-weight: bold;
 }
 
-/* Left side: text forms and buttons */
-.leftcol {
+.belowbox {
+	height: 400px;
+	margin-bottom: 20px;
+}
+
+/* The written paragraph box aligned to the left */
+.leftcontent {
+	width: 500px;
 	float: left;
 	margin-top: 20px;
-	padding-top: 30px;
-	width: 370px;
-	padding-left: 20px;
-	color: white;
 }
 
-/* Links: colour black */
-.leftcol a:link {
-	color: black;
+
+/* Validation for form */
+.message {
+  color: red;
+  font-size: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-a:visited {
-	color: black;
+table {
+  margin-right: auto;
+  margin-left: auto;
 }
 
-a:link {
-	color: black;
-}
-
-/* Right column: logo */
-.rightcol {
-	margin-left: 400px;
-	padding-left: 70px;
-	padding-top: 50px;
-}
-
-/* footer wrapper */
-.bottom {
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 20px;
-}
-
-/* text margins */
-.bottom p {
-	margin-left: 350px;
-}
-
-/* back button settings */
-#back {
-	margin-left: 350px;
-	width: 200px;
-	height: 30px;
-}
-
-/* link underline */
-.bottom a:link {
-	text-decoration: underline;
-}
