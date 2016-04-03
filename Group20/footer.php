@@ -20,7 +20,13 @@
   						
   					</div>
   					<div class="col-sm-3 footerLogo">
-  						<img src="images/logo.gif" alt="logo" width="150" height="100" id="footerLogo">
+            <a href="http://time.is/Vancouver" id="time_is_link" rel="nofollow" style="font-size:20px;color:white"></a>
+            <span id="Vancouver_z18c" style="font-size:15px;color:#616161"></span>
+            <script src="http://widget.time.is/en_gb.js"></script>
+            <script>
+              time_is_widget.init({Vancouver_z18c:{template:"DATE<br>TIME", date_format:"monthname dnum, year, dayname", time_format:"12hours:minutes AMPM"}});
+            </script>
+<!--  						<img src="images/logo.gif" alt="logo" width="150" height="100" id="footerLogo">-->
   					</div>
   				</div>
   			</div>
