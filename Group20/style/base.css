@@ -152,6 +152,8 @@ h1 {
   color: white;
   padding-left: 7px;}
 
+
+
 @media (max-width:1200px){
     .navbar . nav.pull-right{
 		float: right;
@@ -159,15 +161,16 @@ h1 {
 		z-index: 2;
 	}
 	.navbar-header {
-        //float: none;
+        float: none;
     }
     .navbar-left,.navbar-right {
-        //float: none !important;
+        float: none !important;
     }
     .navbar-toggle {
         display: block;
     }
     .navbar-collapse {
+
         //border-top: 1px solid transparent;
         //box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
 		margin-top: 50px;
@@ -187,7 +190,7 @@ h1 {
     }
     .navbar-nav {
         float: none!important;
-    margin-top: 7.5px;
+        margin-top: 7.5px;
     }
     .navbar-nav li {
         float: none;
@@ -202,4 +205,6 @@ h1 {
     }
 
 
+
 	}
+
