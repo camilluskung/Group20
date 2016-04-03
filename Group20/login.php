@@ -61,24 +61,7 @@
 <div class="leftcol">
 <!-- Text form labels and text fields -->
 <form name="loginform" class="form1" onsubmit="return validateLoginForm()" action="forum/login.php" method="post">
-			<!--
-			<div class="usernamediv">
-				<label for="username">email</label>&nbsp;
-				<br><input id="username" type="text" name="login" placeholder="&nbsp;email" maxlength="40">
-				<br><span id="errorUName"></span>
-			</div>
-			<div class="passworddiv">
-				<label for="password">Password</label>&nbsp;
-				<br><input id="password" type="password" name="password" placeholder="&nbsp;Password" maxlength="40">
-				<br><span id="errorPassword"></span>
-			</div>
-			<div class="submitdiv">
-				<input id="submit" type="submit" value="Submit">
-				<a href=forgot.html>Forgot password</a>
-			</div>
-			-->
 
-       
        
 			<div class="form-group">
         <tr>
