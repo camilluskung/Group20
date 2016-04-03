@@ -128,7 +128,7 @@ time_is_widget.init({Vancouver_z18c:{template:"TIME<br>DATE", time_format:"12hou
 
 <!-- Bottom wrapper: Back and Sign Up reference -->
 <div class="bottom">
-<p>Not a member? <a href=signup.html#start>Sign up now.</a></p>
+<p>Not a member? <a href=signup.php>Sign up now.</a></p>
 <!-- <button id="back" onclick="goBack()">Go Back</button> -->
 <button class="btn btn-success" onclick="goBack()">Go Back</button>
 <script>
