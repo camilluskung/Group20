@@ -5,8 +5,10 @@
   include("header.php");
 ?>
 
-<main class="container-fluid">
-    <h1>Contact Us</h1>
+<main class="container">
+    
+        <h1>Contact Us</h1> 
+    
     <div class="row contactUs">
         <div class=col-md-6>
             <div class="googlemap">
@@ -44,22 +46,26 @@
             <div style="margin: auto">
                 <div>
                     <h2>Address</h2>
-                    <p>1234 Fake Street<br>Vancouver BC  V3C 4A9<br>Canada</p>
+                    <h4>3700 Willingdon Ave<br>Burnaby, BC V5G 3H2<br>Canada</h4>
                 </div>
                 
                 <div>
+                    <br><br>
                     <h2>Email</h2>
-                    <p>info@condohub.com</p>
+                    <h4>info@condohub.com</h4>
                 </div>
                 
                 <div>
+                    <br>
                     <h2>Phone</h2>
-                    <p>T 604-374-9834<br>F 604-343-5565</p>
+                    <h4>T 604-374-9834<br>F 604-343-5565</h4>
                 </div>
             </div>
         </div>
     </div>
     </main>
+
+
 
 <?php 
   //footer

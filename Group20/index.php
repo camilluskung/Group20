@@ -16,7 +16,7 @@
             </a>
           </div>
           <br>
-          <p class="paragraph">Find out a more about what we do and how we are here to help you. </p>
+          <p class="paragraph">Find out a more about what we do and how we are here to help you.</p>
         </div>
       </div>
       <div class="photo2">
