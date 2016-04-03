@@ -1,3 +1,7 @@
+<?php
+	require_once('forum/auth.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -114,11 +118,11 @@
 
 		<!-- New thread text area-->
 		<div class="row createThread">
-			<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" id="threadForm"onSubmit="return validateThread()">
+			<form action="forum/add_topic.php" method="post" id="threadForm" onSubmit="return validateThread()">
 				<label for="txtTopic">Topic</label>
-				<input type="text" name="txtTopic" id="txtTopic">
+				<input type="text" name="topic" id="txtTopic">
 				<div class="message" id="errMsgTopic"></div>
-				<textarea form="threadForm" name="taBody" id="taBody" placeholder="write your post here..."></textarea>
+				<textarea form="threadForm" name="detail" id="taBody" placeholder="write your post here..."></textarea>
 				<div class="message" id="errMsgBody"></div>
 				<input type="submit" class="btn btn-success" value="Submit new thread">
 			</form>
