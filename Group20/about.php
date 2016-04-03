@@ -15,12 +15,15 @@
     <div class="row aboutcontent">
       <div class="aboutus">
         <div class="col-md-6 aboutcolumn1">
-              
-                <p class="aboutparagraph section">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="aboutparagraph section"> We are a group of property management professionals here to provide stratified property owners a source of information and answers to strata related questions that they might have (ie. repairs, regulations, warranties). This website serves as a line of communication between the owners and property management professionals.<br><br><strong>What we want to acheive:</strong><br><br>	
+            Reduce the anxiousness awaiting responses from 3rd parties (ie. strata council, property manager, neighbours).<br><br>
+            Reduce time spent seeking answers for common strata questions.<br><br> 
+            Provide basic knowledge of what to expect from a strata as a first-time home buyer.<br><br>
+            Allow users to register and post in a forum. Allow experienced property managers admin capabilities to provide non-legal answers and insight to any questions people may have.</p>
         </div> 
       </div>
       <div class="aboutpicture">
-        <div class="col-md-6 aboutcolumn2"><img src=images/camillus.jpg alt="grouse" width="400" height="400"></div>
+        <div class="col-md-6 aboutcolumn2"><img src=images/professionals.jpg alt="grouse" width="100%" height="100%"></div>
         </div>
       </div>
     </main>

@@ -6,12 +6,8 @@
 ?>
     
     <script>
-<<<<<<< HEAD
    
    function $(id) {
-=======
-      function $(id) {
->>>>>>> 47e51129f80b9e8693549a10658d752aaedb37ae
 			  var element = document.getElementById(id);
 			  return element;
 		  } 

@@ -15,7 +15,7 @@
     <div class="section">
         
         <div class="sectionTitle">
-            <h2>BC Apartment Owners & Managers Association</h2>
+            <h2>BC Apartment Owners &amp; Managers Association</h2>
         </div>
         <div class="sectionBody">
             <p>LandlordBC is BC’s top resource for owners and managers of rental housing. Not a member yet? Stay up to date on the latest developments in the rental housing industry by subscribing to our e-news updates. </p>
