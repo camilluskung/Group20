@@ -21,7 +21,7 @@ $sql2="INSERT INTO $tbl_name(topic_id, member_id, response, datetime)VALUES('$id
 $result2=mysql_query($sql2);
 
 if($result2)
-	header('Location: view_topic.php?id='.$id);
+	header('Location: ../thread.php?id='.$id.'#start');
 else {
 	echo "ERROR".mysql_error();
 }
