@@ -3,5 +3,5 @@
     define('DB_USER', 'comp15362014');
     define('DB_PASSWORD', '2014-1536');
     define('DB_DATABASE', '1536forum');
-    define('HOMEURL', 'http://students.bcitdev.com/A00714614/MyGroup20/index.php');
+    define('HOMEURL', 'http://students.bcitdev.com/A00967263/G20/index.php');
 ?>

@@ -22,6 +22,7 @@
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900' rel='stylesheet' type='text/css'>
     
     <script>
+   
    function $(id) {
 			  var element = document.getElementById(id);
 			  return element;
