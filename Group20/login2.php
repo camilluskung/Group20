@@ -68,22 +68,29 @@
 <body>
 
 <!-- Navigation -->
+  
+  
   <header class="banner">
-    <nav class="navbar">
+<div id="brand">
+    CON<br>DO<br>HUB 
+    </div>   
+   <nav class="navbar">
       <div class="container-fluid">
         <div class="header">
-          <button type="button" class="navbar-inverse navbar-toggle" data-toggle="collapse" 
+ 
+		  <button type="button" class="navbar-inverse navbar-toggle" data-toggle="collapse" 
             data-target="#mainmenu">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo_tall.png" alt="logo" width="100" height="100">
-          </a>
+          <!-- old place -->
+		 <a class="navbar-brand href="index.php">
+			<img src="images/logo_tall.png" alt="logo" width="100" height="100">
+			</a>
         </div>
         <div class="collapse navbar-collapse" id="mainmenu">
-          <ul class="nav pull-right">
+          <ul class="pull-right">
 		  <ul class="nav navbar-nav nav-pills">
             <li><a href="index.php">Home</a></li>
             <li><a href="about.php">About Us</a></li>
@@ -104,14 +111,12 @@
                 echo '<li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li><li  class="active"><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
             ?>
           </ul>
-        
-</div>
+        </ul>
+      </div>
       </div>
     </nav>
     <!-- <div id="wrapper"> -->
-    <div id="brand">
-    CON<br>DO<br>HUB
-    </div>
+    
     <!-- </div> -->
 	
 	<!-- Scroll down button -->
@@ -120,7 +125,6 @@
 	<span class="glyphicon glyphicon-menu-down"></span>
 	</button>
 	</div>
-
 	</header>
 
  <!-- Content --> 
