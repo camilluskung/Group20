@@ -5,15 +5,15 @@
   			<div class="row">
   				<div class="col-sm-offset-1 col-sm-5">
   					<div class="footerWidget">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>Condohub's goal is to be a hub for strata owners seeking guidance and information that may help them resolve current issues or issues that may arise.</p>
   						  
   					</div>
   				</div>
   				<div class="col-sm-3 contact">
   						<h3>CondoHub</h3>
   						<address>
-  							<p> <i class="glyphicon glyphicon-map-marker"></i>&nbsp;1234 Fake St.<br>
-  								&nbsp;Vancouver, BC V5E 3F8<br>&nbsp;Canada<br>
+  							<p> <i class="glyphicon glyphicon-map-marker"></i>&nbsp;3700 Willingdon Ave<br>
+  								&nbsp;Burnaby, BC V5G 3H2<br>&nbsp;Canada<br>
   								<i class="glyphicon glyphicon-phone"></i>&nbsp;604-374-9834 <br>
   								<i class="glyphicon glyphicon-envelope"></i><a href="mailto:info@condohub.ca">&nbsp;info@condohub.ca</a> </p>
   							</address>

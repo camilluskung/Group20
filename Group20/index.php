@@ -15,8 +15,8 @@
               <img src=images/stanleypark.jpg alt="stanley park" width="100%" height="100%" onmouseover="this.src='images/stanleypark-hover.jpg'; this.style.cursor='pointer'" onmouseout="this.src='images/stanleypark.jpg'" onclick="about.php" style="cursor: pointer;">
             </a>
           </div>
-          <h1 class="title">About Us</h1>
-          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <br>
+          <p class="paragraph">Find out a more about what we do and how we are here to help you. </p>
         </div>
       </div>
       <div class="photo2">
@@ -26,8 +26,8 @@
               <img src="images/BC-Place.jpg" alt="BC Place" width="100%" height="100%" onmouseover="this.src='images/BC-Place-hover.jpg'; this.style.cursor='pointer'" onmouseout="this.src='images/BC-Place.jpg'" onclick="resources.php" style="cursor: pointer;">
             </a>
           </div>
-          <h1 class="title">Resources</h1>
-          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <br>
+          <p class="paragraph">Have an unanswered strata question and can't find what you're looking for on the board? We have gathered several other relevant websites that you can check and hopefully find what you're looking for.</p>
         </div>
       </div>
       <div class="photo3">
@@ -37,8 +37,8 @@
               <img src=images/gastown.jpg alt="gastown" width="100%" height="100%"  onmouseover="this.src='images/gastown-hover.jpg'; this.style.cursor='pointer'" onmouseout="this.src='images/gastown.jpg'" onclick="faq.php" style="cursor: pointer;">
             </a>
           </div>
-          <h1 class="title">FAQ</h1>
-          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <br>
+          <p class="paragraph">Have a strata related question that needs to be answered? Check to see if it is one our frequently asked questions. If it isn't please feel free to use our board.</p>
         </div>
       </div>
       <div class="photo4">
@@ -48,8 +48,8 @@
               <img src=images/east-van.jpg alt="east-van" width="100%" height="100%"  onmouseover="this.src='images/east-van-hover.jpg'; this.style.cursor='pointer'" onmouseout="this.src='images/east-van.jpg'" onclick="board.php" style="cursor: pointer;">
             </a>
           </div>
-          <h1 class="title">Board</h1>
-          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <br>
+          <p class="paragraph">Have concerns about your current strata or curious about strata rules and bylaws? Check to see if the topic you're interested in is a current thread or start a new thread if it isn't.</p>
         </div>
       </div>
     </div>

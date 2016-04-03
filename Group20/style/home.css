@@ -9,8 +9,6 @@ h1.title {text-align: center;
 	          letter-spacing: 4px;
             text-transform:uppercase;}
 
-p.paragraph {text-align: left;
-            padding-left: 20px;
-            padding-right: 20px;}
+p.paragraph {text-align: left;}
 
 .images {text-align: -webkit-center;}
