@@ -1,0 +1,56 @@
+/* Labels of the text forms */
+label {
+width: 150px;
+text-align: left;
+display: block;
+}
+
+.category {
+padding-bottom: 10px;
+}
+
+ /*The title of the page "Sign Up"*/
+.toptitle h1 {
+	color: #92aac3;
+  font-weight: 600;
+  font-size: 1.90em;
+	letter-spacing: 4px;
+	text-transform:uppercase;
+	padding-bottom: 10px;
+	padding-top: 0;
+	}
+
+
+/* Inner heading below title */
+.toptitle h2 {
+	margin-top: 10px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.belowbox {
+	height: 400px;
+	margin-bottom: 20px;
+}
+
+/* The written paragraph box aligned to the left */
+.leftcontent {
+	width: 500px;
+	float: left;
+	margin-top: 20px;
+}
+
+
+/* Validation for form */
+.message {
+  color: red;
+  font-size: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+table {
+  margin-right: auto;
+  margin-left: auto;
+}
+

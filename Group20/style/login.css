@@ -11,20 +11,22 @@ input {
 	height: 50px;
 	color: black;
 }
-/* Buttons to submit form and go back */
+/* Buttons to submit form and go back 
 button {
+	
 	width: 250px;
 	margin-left: 25px;
 	background: #FF9900;
 	border: thin solid #FF9900;
 	color: white;
 }
+*/
 /* The submit button css */
 #submit {
 	width: 140px;
 	height: 40px;
-	background: #FF9900;
-	border: thin solid #FF9900;
+	//background: #FF9900;
+	//border: thin solid #FF9900;
 	color: white;
 }
 
@@ -69,7 +71,6 @@ button {
 .logobar {
 	padding: 0;
 	height: 100px;
-	border-bottom: solid white 3px;
 }
 
 /* Title heading */

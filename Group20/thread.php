@@ -1,3 +1,18 @@
+<?php
+	require_once('forum/config.php');
+
+	// Connect to server and select database.
+	mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect");
+	mysql_select_db(DB_DATABASE)or die("cannot select DB");
+	$tbl_name="topic"; // Table name
+
+	// get value of id that sent from address bar
+	$id=$_GET['id'];
+	$sql_topic="SELECT * FROM $tbl_name WHERE id='$id'";
+	$result_topic=mysql_query($sql_topic);
+	$rows_topic=mysql_fetch_array($result_topic);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -97,51 +112,76 @@
 		<div class="row post">
 			<div class="col-md-2 userinfo">
 				<div class="username">
-				Waylon Ching
+				<?php 
+					$member_id=$rows_topic['member_id'];
+					$sql_member="SELECT * FROM members WHERE member_id='$member_id'";
+					$result_member=mysql_query($sql_member);
+					$rows_member=mysql_fetch_array($result_member);
+					echo $rows_member['firstname']; 
+				?>
 				</div>
 			</div>
 			<div class="col-md-10 postbody">
-				<h2>Thread Title</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat neque ut neque pulvinar pretium. Curabitur aliquam dui pharetra orci maximus, nec interdum sem condimentum. Nam faucibus hendrerit leo, faucibus tristique nibh fermentum a. Nulla aliquet porttitor ullamcorper. Ut aliquam posuere massa sed ultrices. Duis sagittis elit nec odio consequat mollis. Aliquam tincidunt neque posuere est ullamcorper egestas. Nulla a nulla varius, vehicula tortor non, fringilla lorem. Nulla a aliquam ante. Donec dignissim mauris vel molestie imperdiet.
-				<br><br>Etiam imperdiet tellus quam. Proin ultricies libero turpis, non molestie lectus tincidunt nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean nec neque metus. Nullam quis sem in sem laoreet ultrices sit amet quis mi. Mauris feugiat, nibh eget blandit lobortis, erat nisl tristique quam, aliquam venenatis felis elit in dui. Sed non augue porta, aliquet ligula porttitor, venenatis dui. Phasellus quis enim eu sapien consectetur suscipit et sed nunc.</p>
+				<h2><?php echo $rows_topic['topic']; ?></h2>
+				<p>
+					<?php echo $rows_topic['detail']; ?>
+				</p>
+				<strong>Date/time : </strong><?php echo $rows_topic['datetime']; ?>
 			</div>
 		</div>
+
+		<?php
+		$tbl_name2="response"; // Switch to table "response"
+
+		$sql_response="SELECT * FROM $tbl_name2 WHERE topic_id='$id'";
+		$result_response=mysql_query($sql_response);
+
+		while($rows_response=mysql_fetch_array($result_response)){
+		?>
+
 		<div class="row post">
-			<div class="userinfo col-md-2">
+			<div class="col-md-2 userinfo">
 				<div class="username">
-				Waylon Ching
+				<?php 
+					$member_id=$rows_response['member_id'];
+					$sql_member="SELECT * FROM members WHERE member_id='$member_id'";
+					$result_member=mysql_query($sql_member);
+					$rows_member=mysql_fetch_array($result_member);
+					echo $rows_member['firstname']; 
+				?>
 				</div>
 			</div>
-			<div class="postbody col-md-10">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat neque ut neque pulvinar pretium. Curabitur aliquam dui pharetra orci maximus, nec interdum sem condimentum. Nam faucibus hendrerit leo, faucibus tristique nibh fermentum a. Nulla aliquet porttitor ullamcorper. Ut aliquam posuere massa sed ultrices. Duis sagittis elit nec odio consequat mollis. Aliquam tincidunt neque posuere est ullamcorper egestas. Nulla a nulla varius, vehicula tortor non, fringilla lorem. Nulla a aliquam ante. Donec dignissim mauris vel molestie imperdiet.</p>
+			<div class="col-md-10 postbody">
+				<p>
+					<?php echo $rows_response['response']; ?>
+				</p>
+				<strong>Date/time : </strong><?php echo $rows_response['datetime']; ?>
 			</div>
 		</div>
-		<div class="row post">
-			<div class="userinfo col-md-2">
-				<div class="username">
-				A Rather Long Name (longerrrr)
-				</div>
-			</div>
-			<div class="postbody col-md-10">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat neque ut neque pulvinar pretium. Curabitur aliquam dui pharetra orci maximus, nec interdum sem condimentum. Nam faucibus hendrerit leo, faucibus tristique nibh fermentum a. Nulla aliquet porttitor ullamcorper. Ut aliquam posuere massa sed ultrices. Duis sagittis elit nec odio consequat mollis. Aliquam tincidunt neque posuere est ullamcorper egestas. Nulla a nulla varius, vehicula tortor non, fringilla lorem. Nulla a aliquam ante. Donec dignissim mauris vel molestie imperdiet.
-				<br><br>
-				Etiam imperdiet tellus quam. Proin ultricies libero turpis, non molestie lectus tincidunt nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean nec neque metus. Nullam quis sem in sem laoreet ultrices sit amet quis mi. Mauris feugiat, nibh eget blandit lobortis, erat nisl tristique quam, aliquam venenatis felis elit in dui. Sed non augue porta, aliquet ligula porttitor, venenatis dui. Phasellus quis enim eu sapien consectetur suscipit et sed nunc.
-				<br><br>
-				Cras eu velit a risus rhoncus finibus. Sed eu sem suscipit, mattis ligula vel, consectetur purus. Duis dictum nec nibh eget accumsan. Nunc tincidunt sodales faucibus. Fusce sollicitudin metus nec metus dictum pretium. Morbi a eleifend ipsum. Phasellus ac nisi sapien. Sed varius enim enim, sed vulputate tortor vehicula quis. Vestibulum dapibus cursus orci in posuere. Ut cursus, felis in dictum varius, sem lorem tempus ligula, sed ullamcorper orci est ac sem. Fusce porta nulla mi, eu porta sem sodales et. Donec diam lacus, malesuada a condimentum eget, mollis id ipsum. Cras nec odio nibh. Nunc aliquet nulla vitae convallis fermentum.</p>
-			</div>
-		</div>
-		<!-- Reply text area -->
+
+		<?php
+		}
+		mysql_close();
+		?>
+
 		<div class="row post" id="replybody">
 			<div class="userinfo col-md-2">
 				<div class="username" id="currentUser">
-				[User Name]
+				<?php
+	            if($_SESSION['logged']==true) {
+	            	echo $_SESSION["SESS_FIRST_NAME"];
+	              	}
+              	else if($_SESSION['logged']==false) 
+                	echo 'GUEST';
+	            ?>
 				</div>
 			</div>
 			<div class="postbody col-md-10">
-				<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" id="replyform" 
+				<form action="forum/add_response.php" method="post" id="replyform" 
 					onSubmit="return validatePost()">
-					<textarea form="replyform" name="taBody" id="taBody" placeholder="write your reply here..."></textarea>
+					<textarea form="replyform" name="response" id="taBody" placeholder="write your reply here..."></textarea>
 					<div class=message id="errMsgBody"></div>
+					<input name="id" type="hidden" value="<?php echo $id; ?>">
 					<input type="submit" class="btn btn-success" id="submitReply" value="post quick reply">
 				</form>
 			</div>

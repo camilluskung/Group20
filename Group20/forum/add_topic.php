@@ -17,7 +17,7 @@
 	$result=mysql_query($sql);
 
 	if($result)
-		header("location: forum.php");
+		header("location: ../board.php#start");
 	else {
 		echo "ERROR";
 	}
