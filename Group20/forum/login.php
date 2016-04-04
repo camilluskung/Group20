@@ -77,7 +77,7 @@
 			$errmsg_arr[] = 'Login failed';	
 			$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
 //      $_SESSION ['logged'] = false;
-			header("location: ../login.html");
+			header("location: ../login.php");
 			exit();
 		}
 	}else {
