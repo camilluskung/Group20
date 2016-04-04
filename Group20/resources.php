@@ -6,48 +6,95 @@
 ?>
 
 <main class="container">
-    <div class="heading">
-      <div id="start">
+    
+       <div class="heading row">
         <h1>RESOURCES</h1>
-      </div>
+     
+            <h3>A collection of useful documents and links.</h3>
         
-        <h3>A collection of useful documents and links.</h3>
     </div>
-    <hr>
-    <div class="section">
         
-        <div class="sectionTitle">
-            <h2>BC Apartment Owners &amp; Managers Association</h2>
-        </div>
-        <div class="sectionBody">
-            <p>LandlordBC is BC’s top resource for owners and managers of rental housing. Not a member yet? Stay up to date on the latest developments in the rental housing industry by subscribing to our e-news updates. </p>
-            <span class="seemore"><a href="http://landlordbc.ca/">see more</a></span>
-        </div>
-    </div>
-    <hr>
+
     <div class="section">
-        <div class="sectionTitle">
-            <h2>Strata Property Agents of British Columbia</h2>
+        <div class="firstfaq11 row">
+             <div class="q1right col-md-8">
+                 <div class="q">
+                     <h3 class="question"> &nbsp;BC Apartment Owners &amp; Managers Association</h3>
+                     </div>
+        <div class="a">
+
+                     <p>LandlordBC is BC’s top resource for owners and managers of rental housing. Not a member yet? Stay up to date on the latest developments in the rental housing industry by subscribing to our e-news updates. 
+            <span class="seemore"><a href="http://landlordbc.ca/"> &nbsp;see more</a></span></p>
+                     </div>
+         </div>
+       
+    <div class="q1left col-md-4">
+                <div class="img">
+                    <img src="images/5.jpg" alt="condo1" width="300" height="180" id="footerLogo">
+                </div>
+            </div>
         </div>
-        <div class="sectionBody">
-            <p>The Strata Property Agents of British Columbia is an industry association developed to represent the interests and issues of the many strata management companies working throughout the province of BC. The association was established in 2000 and represents dozens of property management companies - specifically residential strata management companies - acting as "agents" for approximately 350,000 strata lot units</p>
-            <span class="seemore"><a href="http://www.spabc.org/">see more</a></span>
+   <!-- <hr> -->
+      
+        <div class="section">
+        <div class="firstfaq11 row">
+             <div class="q1right col-md-8">
+                 <div class="q">
+                     <h3 class="question">Strata Property Agents of British Columbia</h3>
+                     </div>
+        <div class="a">
+<p>The Strata Property Agents of British Columbia is an industry association developed to represent the interests and issues of the many strata management companies working throughout the province of BC. The association was established in 2000 and represents dozens of property management companies - specifically residential strata management companies - acting as "agents" for approximately 350,000 strata lot units
+            <span class="seemore"><a href="http://www.spabc.org/">&nbsp;see more</a></span></p>
+                     </div>
+         </div>
+       
+    <div class="q1left col-md-4">
+                <div class="img">
+                    <img src="images/11.jpg" alt="condo1" width="300" height="180" id="footerLogo">
+                </div>
+            </div>
         </div>
-    </div>
-    <hr>
-    <div class="section">
-        <div class="sectionTitle">
-            <h2>Residential Tenancy Branch : Government of Briish Columbia</h2>
+
+            
+          <div class="section">
+        <div class="firstfaq11 row">
+             <div class="q1right col-md-8">
+                 <div class="q">
+                     <h3 class="question">BC Land Title and Survey</h3>
+                     </div>
+        <div class="a">
+<p>The Land Title and Survey Authority of British Columbia is a publicly accountable, statutory corporation with a unique governance structure responsible for administering the land title and survey systems in BC.
+            <span class="seemore"><a href="https://ltsa.ca/">&nbsp;see more</a></span></p>
+                     </div>
+         </div>
+       
+    <div class="q1left col-md-4">
+                <div class="img">
+                    <img src="images/7.jpg" alt="condo1" width="300" height="180" id="footerLogo">
+                </div>
+            </div>
+        </div>          
+            
+            </div>
+            <div class="section">
+        <div class="firstfaq11 row">
+             <div class="q1right col-md-8">
+                 <div class="q">
+                     <h3 class="question">Strata Property Act</h3>
+                     </div>
+        <div class="a">
+<p>BC Laws is published by the Queen's Printer for British Columbia in partnership with the Ministry of Justice and the Legislative Assembly.
+            <span class="seemore"><a href="http://www.bclaws.ca/EPLibraries/bclaws_new/document/ID/freeside/98043_01">&nbsp;see more</a></span></p>
+                     </div>
+         </div>
+       
+    <div class="q1left col-md-4">
+                <div class="img">
+                    <img src="images/12.jpg" alt="condo1" width="300" height="180" id="footerLogo">
+                </div>
+            </div>
         </div>
-        <div class="sectionBody">
-           <p>Landlords and tenants are encouraged to use this site to understand their rights and responsibilities. </p>
-<p>
-Both tenants and landlords have specific rights and responsibilities in a tenancy. Make sure you’re renting the right way – access information and resources that will help you have a successful tenancy.  
-            </p>
-               <p>The Residential Tenancy Branch can also answer questions or provide dispute resolution services for problems that landlords and tenants can’t solve on their own.</p>
-            <span class="seemore"><a href="http://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies">see more</a></span>
-        </div>
-    </div>
+    
 </main>
 
 

@@ -5,12 +5,13 @@
   include("header.php");
 ?>
 
-<main class="container">
-      
-  <!-- FAQ-->
-  <div id="start">
-  <h1>FAQ</h1>
-  </div>
+
+     <main class="container">
+ 
+     
+ 
+     
+     <!-- FAQ-->
   <div class="panel-group" id="accordion">
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -94,11 +95,8 @@
     </div>
       
   </div> 
-</div>   
-</div>
-  </main>      
-
-
+ 
+</main>
 <?php 
   //footer
   include("footer.php")
